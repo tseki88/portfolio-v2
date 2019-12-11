@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+.mobileHide {
+    @media (max-width: 500px) {
+        display: none;
+    }    
+}
+
+.relative {
+    position: relative;
+}
