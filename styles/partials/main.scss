@@ -2,13 +2,15 @@
   'abstracts/setup';
 
 @import
-  'base/_colors',
+  'base/colors',
   'base/typography',
   'base/base',
   'base/animations';
 
 @import
-  'layout/header';
+  'layout/headerSection',
+  'layout/nav',
+  'layout/skillSection';
 
 @import
   'components/button';

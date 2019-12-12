@@ -3,6 +3,21 @@ body {
     height: 100vh;
 }
 
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
 .mobileHide {
     @media (max-width: 500px) {
         display: none;
@@ -12,3 +27,16 @@ body {
 .relative {
     position: relative;
 }
+
+.section {
+    &--primary {
+        background-color: $colorSectionPrimaryBackground;
+        color: $colorSectionPrimaryFont;
+    }
+
+    &--secondary {
+        background-color: $colorSectionSecondaryBackground;
+        color: $colorSectionSecondaryFont;
+    }
+}
+

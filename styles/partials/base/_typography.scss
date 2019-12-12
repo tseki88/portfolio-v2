@@ -1,19 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,600,800&display=swap');
 
-section h2 {
-    font-size: 36px;
+html,
+body {
+    font-size: 125%;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    font-size: 3.1rem;
+}
+
+h2 {
+    font-size: 1.8rem;
     letter-spacing: 0px;
     line-height: 70px;
-    // color: $colorWhite;
-    font-family: "Raleway";
     font-weight: 800;
     text-align: center;
 }
 
 h3 {
-    font-size: 22px;
+    font-size: 1.2rem;
     letter-spacing: 1px;
     line-height: 36px;
-    // color: $colorWhite;
-    font-family: "Raleway";
     font-weight: 600;
 }
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.portfolio__button {
+    font-size: 0.65rem;
+}
+
+.form__button {
+    font-size: 0.9rem;
+}
+
