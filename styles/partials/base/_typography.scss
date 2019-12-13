@@ -1,13 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,600,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800&display=swap');
 
 html,
 body {
-    font-size: 125%;
+    font-size: 20px;
     font-family: 'Raleway', sans-serif;
 }
 
+h2,
+h3,
+.nav {
+    text-transform: uppercase;
+    text-align: center;
+}
+
 h1 {
-    font-size: 3.1rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3.25rem;
+    font-weight: 800;
+    text-align: center;
 }
 
 h2 {
@@ -15,25 +26,52 @@ h2 {
     letter-spacing: 0px;
     line-height: 70px;
     font-weight: 800;
-    text-align: center;
 }
 
 h3 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     letter-spacing: 1px;
-    line-height: 36px;
+    line-height: 30px;
     font-weight: 600;
 }
 
-.uppercase {
-    text-transform: uppercase;
+h4 {
+    font-size: 0.8rem;
 }
 
-.portfolio__button {
-    font-size: 0.65rem;
+.nav__link {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 70px;
+}
+
+.about {
+    &__subheading {
+        text-align: left;
+    }
+
+    &__text {
+        letter-spacing: 1px;
+        font-size: 1.1rem;
+    }
+}
+
+.portfolio {
+    &__title {
+        font-size: 1.4rem;
+        text-align: left;
+        text-transform: capitalize;
+    }
+
+    &__description {
+        font-size: 0.9rem;
+    }
+
+    &__button {
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
 }
 
 .form__button {
     font-size: 0.9rem;
 }
-

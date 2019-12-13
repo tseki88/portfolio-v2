@@ -6,99 +6,177 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Steve Seki - Portfolio</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <script src="https://kit.fontawesome.com/0dd18e4074.js" crossorigin="anonymous"></script>
 </head>
 <body class="section--primary">
-    <header class="section--secondary">
+    <header class="header section--secondary">
         <div class="wrapper">
             <nav class="nav">
                 <ul class="nav__list">
+                    <li class="nav__item"><a class="nav__link" href="">Home</a></li>
                     <li class="nav__item"><a class="nav__link" href="">About</a></li>
-                    <li class="nav__item"><a class="nav__link" href="">Portfolio</a></li>
-                    <li class="nav__item"><a class="nav__link" href="">Skillset</a></li>
+                    <li class="nav__item"><a class="nav__link" href="">Projects</a></li>
                     <li class="nav__item"><a class="nav__link" href="">Contact</a></li>
                 </ul>
             </nav>
-            <h2 class="uppercase">Hello..my name is Steve Seki</h2>
-            <h1 class="uppercase">I am a Web Developer</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, culpa optio cum est commodi ad, labore laboriosam dolor sequi provident voluptates velit voluptas ab facere reiciendis sapiente repudiandae quas quia!</p>
+            <div class="header__heading__container">
+                <h1 class="header__heading__main">Teruhisa Steve Seki</h1>
+                <h2 class="header__heading__sub">Front-End Web Developer</h2>
+            </div>
             <div class="header__image">
-                <img src="" alt="">
+                <div class="header__overlay">
+                    <img class="header__photo" src="./assets/2019-fall-Steve-Seki-3(1).jpg" alt="">
+                </div>
             </div>
         </div>
     </header>
-    <section class="skill section--primary">
-        <div class="wrapper">
-            <h2>My Skills</h2>
-            <h3>Development Journey</h3>
-            <ul class="skill__list">
-                <li class="skill__item">
-                    <figure>
-                        <div>
-                            <img src="" alt="">
-                        </div>
-                        <figcaption></figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <div>
-                            <img src="" alt="">
-                        </div>
-                        <figcaption></figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <div>
-                            <img src="" alt="">
-                        </div>
-                        <figcaption></figcaption>
-                    </figure>
-                </li>
-            </ul>
+    <section class="section--primary">
+        <div class="about wrapper">
+            <h2 class="about__heading"><span class="about__heading--accent">About</span> Me</h2>
+            <div class="about__container">
+                <!-- <h3 class="about__subheading"></h3> -->
+                <p class="about__text">I am a front-end developer with a background in hospitality and retail management. I am a developer who focuses on efficiency and future-proofing where appropriate.</p> 
+                <p class="about__text">My strengths involve problem solving approaches looking at different perspectives, taking into consideration the bigger picture and identifying the core cause of the issues.</p>
+                <p class="about__text">With my previous experience I bring effective communication skills, and the flexibility of adapting to priority changes in projects.</p>
+                </div>
+            <div class="about__container">
+                <!-- <h3 class="about__subheader">Skills</h3> -->
+                <ul class="category__list">
+                    <li class="category__item">
+                        <h4 class="skill__heading">Markup & Styling</h4>
+                        <ul class="skill__list">
+                            <li class="skill__item"><i class="skill__icon devicon-html5-plain"></i></li>
+                            <li class="skill__item"><i class="skill__icon devicon-css3-plain"></i></li>
+                            <li class="skill__item"><i class="skill__icon devicon-sass-original"></i></li>
+                        </ul>
+                    </li>
+                    <li class="category__item">
+                        <h4 class="skill__heading">Scripting</h4>
+                        <ul class="skill__list">
+                            <li class="skill__item"><i class="skill__icon devicon-javascript-plain"></i></li>
+                            <li class="skill__item"><i class="skill__icon devicon-jquery-plain"></i></li>
+                            <li class="skill__item"><i class="skill__icon devicon-react-original"></i></li>
+                        </ul>
+                    </li>
+                    <li class="category__item">
+                        <h4 class="skill__heading">Tools & Misc</h4>
+                        <ul class="skill__list">
+                            <li class="skill__item"><i class="skill__icon devicon-git-plain"></i></li>
+                            <li class="skill__item"><i class="skill__icon devicon-github-plain"></i></li>
+                            <li class="skill__item"><i class="skill__icon devicon-gulp-plain"></i></li>
+                        </ul>
+                    </li>                    
+                    <li class="category__item">
+                        <h4 class="skill__heading">Looking to Learn</h4>
+                        <ul class="skill__list">
+                            <li class="skill__item"><i class="skill__icon devicon-nodejs-plain"></i></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
     <section class="portfolio section--secondary">
         <div class="wrapper">
             <div class="portfolio__heading">
-                <h2>My Portfolio</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus tempore, debitis saepe voluptatibus doloribus necessitatibus alias facere magnam, unde doloremque vitae dolores explicabo totam qui facilis modi ea cum nulla.</p>
-                <div>
+                <h2>My <span class="portfolio__heading--accent">Portfolio</span></h2>
+                <!-- <div>
                     <img src="" alt="">
-                </div>
+                </div> -->
             </div>
             <div class="portfolio__container">
                 <div class="portfolio__item">
-                    <h3 class="porfolio__title">Title</h3>
-                    <ul class="usedLanguage">
-                        <li class="usedLanguageItem"></li>
-                    </ul>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quisquam provident iure quasi deleniti tempore ullam, saepe ipsam consequatur, aperiam deserunt tenetur vero dignissimos officia ipsum aut. Accusantium, suscipit adipisci.</p>
-                    <div class="portfolio__buttonContainer">
-                        <button class="buttonStyle portfolio__button">GitHub</button>
-                        <button class="buttonStyle portfolio__button">Live Project</button>
+                    <div class="portfolio__text">
+                        <h3 class="portfolio__title">LUDR Madness</h3>
+                        <ul class="language__container language__container--orange">
+                            <li class="language__item">jQuery</li>
+                            <li class="language__item">Sass</li>
+                        </ul>
+                        <p class="portfolio__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quisquam provident iure quasi deleniti tempore ullam, saepe ipsam consequatur, aperiam deserunt tenetur vero dignissimos officia ipsum aut. Accusantium, suscipit adipisci.</p>
+                        <div class="portfolio__buttonContainer">
+                            <button class="buttonStyle portfolio__button">GitHub</button>
+                            <button class="buttonStyle portfolio__button">Live Project</button>
+                        </div>
+                    </div>
+                    <div class="portfolio__screenshot">
+                        <div class="screenshot__border screenshot__border--orange">
+                            <!-- <div class="screenshot__aside">
+                                <img src="" alt="" class="screenshot__image">
+                            </div> -->
+                            <img class="screenshot__image" src="./assets/screen_ludr.png" alt="">
+                        </div>
                     </div>
                 </div>
                 <div class="portfolio__item">
-                    <h3 class="porfolio__title">Title</h3>
-                    <ul class="usedLanguage">
-                        <li class="usedLanguageItem"></li>
-                    </ul>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quisquam provident iure quasi deleniti tempore ullam, saepe ipsam consequatur, aperiam deserunt tenetur vero dignissimos officia ipsum aut. Accusantium, suscipit adipisci.</p>
-                    <div class="portfolio__buttonContainer">
-                        <button class="buttonStyle portfolio__button">GitHub</button>
-                        <button class="buttonStyle portfolio__button">Live Project</button>
+                    <div class="portfolio__text">
+                        <h3 class="portfolio__title">Pokémon Blackjack</h3>
+                        <ul class="language__container language__container--teal">
+                            <li class="language__item">React</li>
+                            <li class="language__item">Group Project</li>
+                            <li class="language__item">Rest API</li>
+                            <li class="language__item">CSS</li>
+                        </ul>
+                        <p class="portfolio__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quisquam provident iure quasi deleniti tempore ullam, saepe ipsam consequatur, aperiam deserunt tenetur vero dignissimos officia ipsum aut. Accusantium, suscipit adipisci.</p>
+                        <div class="portfolio__buttonContainer">
+                            <button class="buttonStyle portfolio__button">GitHub</button>
+                            <button class="buttonStyle portfolio__button">Live Project</button>
+                        </div>
+                    </div>
+                    <div class="portfolio__screenshot">
+                        <div class="screenshot__border screenshot__border--teal">
+                            <!-- <div class="screenshot__aside">
+                                <img src="" alt="" class="screenshot__image">
+                            </div> -->
+                            <img class="screenshot__image" src="./assets/screen_poke.png" alt="">
+                        </div>
                     </div>
                 </div>
                 <div class="portfolio__item">
-                    <h3>Title</h3>
-                    <ul class="usedLanguage">
-                        <li class="usedLanguageItem"></li>
-                    </ul>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quisquam provident iure quasi deleniti tempore ullam, saepe ipsam consequatur, aperiam deserunt tenetur vero dignissimos officia ipsum aut. Accusantium, suscipit adipisci.</p>
-                    <div class="portfolio__buttonContainer">
-                        <button class="buttonStyle portfolio__button">GitHub</button>
-                        <button class="buttonStyle portfolio__button">Live Project</button>
+                    <div class="portfolio__text">
+                        <h3 class="portfolio__title">Board Game Tool Kit</h3>
+                        <ul class="language__container language__container--green">
+                            <li class="language__item">React</li>
+                            <li class="language__item">Firebase</li>
+                            <li class="language__item">Sass</li>
+                        </ul>
+                        <p class="portfolio__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quisquam provident iure quasi deleniti tempore ullam, saepe ipsam consequatur, aperiam deserunt tenetur vero dignissimos officia ipsum aut. Accusantium, suscipit adipisci.</p>
+                        <div class="portfolio__buttonContainer">
+                            <button class="buttonStyle portfolio__button">GitHub</button>
+                            <button class="buttonStyle portfolio__button">Live Project</button>
+                        </div>
+                    </div>
+                    <div class="portfolio__screenshot">
+                        <div class="screenshot__border screenshot__border--green">
+                            <!-- <div class="screenshot__aside">
+                                <img src="" alt="" class="screenshot__image">
+                            </div> -->
+                            <img class="screenshot__image" src="./assets/screen_bgtool.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__item">
+                    <div class="portfolio__text">
+                        <h3 class="portfolio__title">GitHired</h3>
+                        <ul class="language__container language__container--purple">
+                            <li class="language__item">jQuery</li>
+                            <li class="language__item">Pair Programming</li>
+                            <li class="language__item">Rest API</li>
+                            <li class="language__item">CSS</li>
+                        </ul>
+                        <p class="portfolio__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quisquam provident iure quasi deleniti tempore ullam, saepe ipsam consequatur, aperiam deserunt tenetur vero dignissimos officia ipsum aut. Accusantium, suscipit adipisci.</p>
+                        <div class="portfolio__buttonContainer">
+                            <button class="buttonStyle portfolio__button">GitHub</button>
+                            <button class="buttonStyle portfolio__button">Live Project</button>
+                        </div>
+                    </div>
+                    <div class="portfolio__screenshot">
+                        <div class="screenshot__border screenshot__border--purple">
+                            <div class="screenshot__aside screenshot__border--purple">
+                                <img src="./assets/screen_githired_mobile.png" alt="" class="screenshot__image">
+                            </div>
+                            <img class="screenshot__image" src="./assets/screen_githired.png" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -106,17 +184,17 @@
     </section>
     <section class="contact">
         <div class="wrapper">
-            <h2>Get in Touch</h2>
+            <h2 class="contact__heading">Get in <span class="contact__heading--accent">Touch</span></h2>
+            <form class="contact__form" action="">
+                <label class="form__label" for="name"></label>
+                <input class="form__input" type="text" name="name" id="name" placeholder="Full Name" required>
+                <label class="form__label" for="email"></label>
+                <input class="form__input" type="email" name="email" id="email" placeholder="Email Address" required>
+                <label class="form__label" for="message"></label>
+                <textarea class="form__textarea" name="message" id="message" cols="30" rows="10" placeholder="Message" required></textarea>
+                <input type="submit" class="buttonStyle form__button" value="Send Now">
+            </form>
         </div>
-        <form class="contact__form" action="">
-            <label for="name"></label>
-            <input type="text" name="name" id="name" placeholder="Full Name" required>
-            <label for="email"></label>
-            <input type="email" name="email" id="email" placeholder="Email Address" required>
-            <label for="message"></label>
-            <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" required></textarea>
-            <input type="submit" class="buttonStyle form__button" value="Send Now">
-        </form>
     </section>
     <footer class="section--secondary">
         <div class="footer__top">
@@ -130,7 +208,7 @@
         </div>
         <div class="footer__bottom">
             <div class="wrapper">
-                <small class="uppercase">2019 Steve Seki</small>
+                <small>2019 Steve Seki</small>
             </div>
         </div>
     </footer>

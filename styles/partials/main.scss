@@ -10,7 +10,10 @@
 @import
   'layout/headerSection',
   'layout/nav',
-  'layout/skillSection';
+  'layout/aboutSection',
+  'layout/portfolioSection',
+  'layout/contactSection';
 
 @import
-  'components/button';
+  'components/button',
+  'components/form';

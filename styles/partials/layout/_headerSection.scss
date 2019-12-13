@@ -1,3 +1,47 @@
-// h1 {
-//     margin-bottom: 0;
-// }
+.header {
+    position: relative;
+    height: 75vh;
+    margin-bottom: 25vh;
+
+    &__heading {
+        &__container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &__main {
+            margin-bottom: 0;
+            color: $colorWhite;
+        }
+    }
+
+
+    &__image {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 300px;
+        height: 300px;
+        transform: translate(-50%, 50%);
+    }
+
+    &__overlay {
+        width: 100%;
+        height: 100%;
+        transform: rotate(45deg);
+        border: 5px solid $colorTeal;
+        border-radius: 15%;
+        background-color: $colorTeal;
+        overflow: hidden;
+    }
+
+    &__photo {
+        max-height: 142%;
+        width: 100%;
+        transform: rotate(-45deg) scale(1.8);
+        margin: 8% 25% -130%;
+        z-index: -1;
+    }
+}
