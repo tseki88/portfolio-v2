@@ -241,8 +241,7 @@ h4 {
 .portfolio__description {
   font-size: 0.9rem; }
 
-.portfolio__button {
-  font-size: 0.8rem;
+.portfolio__link {
   font-weight: 600; }
 
 .form__button {
@@ -268,9 +267,6 @@ a {
 @media (max-width: 500px) {
   .mobileHide {
     display: none; } }
-
-section {
-  padding: 4rem 0; }
 
 .section--primary {
   background-color: #eff3f3;
@@ -336,24 +332,29 @@ section {
     color: inherit; }
 
 .about {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  padding: 2rem 0 4rem; }
+  .about__section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
   .about__heading {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 100%;
-            flex: 0 1 100%; }
+            flex: 0 1 100%;
+    margin-top: 0; }
     .about__heading--accent {
       color: #fd5f42; }
-  .about__container {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 45%;
-            flex: 0 1 45%; }
+  .about__container--text {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%; }
+  .about__container--skills {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%; }
 
 .skill__heading {
   margin-bottom: 15px;
@@ -398,9 +399,14 @@ section {
       -webkit-box-direction: reverse;
           -ms-flex-direction: row-reverse;
               flex-direction: row-reverse; }
+    .portfolio__item:nth-of-type(2n + 1) .screenshot__aside {
+      left: none;
+      right: 0;
+      -webkit-transform: translate(240%, 6%);
+              transform: translate(240%, 6%); }
 
 .portfolio__text {
-  width: 52%; }
+  width: 50%; }
 
 .portfolio__screenshot {
   display: -webkit-box;
@@ -412,6 +418,23 @@ section {
       -ms-flex-pack: end;
           justify-content: flex-end;
   width: 45%; }
+
+.portfolio__linkContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.portfolio__link {
+  padding: 0 10px;
+  margin-right: 5px;
+  height: 28px;
+  line-height: 28px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  color: #2c3e50;
+  text-align: center; }
 
 .language__item {
   padding: 0 10px;
@@ -444,23 +467,25 @@ section {
   height: 100%;
   border-radius: 5px; }
   .screenshot__border--orange {
-    -webkit-box-shadow: -15px 15px 2px #fcb84b;
-            box-shadow: -15px 15px 2px #fcb84b; }
+    -webkit-box-shadow: -15px -10px 2px #fcb84b;
+            box-shadow: -15px -10px 2px #fcb84b; }
   .screenshot__border--teal {
-    -webkit-box-shadow: 15px 15px 2px #49a0ae;
-            box-shadow: 15px 15px 2px #49a0ae; }
+    -webkit-box-shadow: 15px -10px 2px #49a0ae;
+            box-shadow: 15px -10px 2px #49a0ae; }
   .screenshot__border--green {
-    -webkit-box-shadow: -15px 15px 2px #22c48a;
-            box-shadow: -15px 15px 2px #22c48a; }
+    -webkit-box-shadow: -15px -10px 2px #22c48a;
+            box-shadow: -15px -10px 2px #22c48a; }
   .screenshot__border--purple {
-    -webkit-box-shadow: 5px -5px 1px #a369bd;
-            box-shadow: 5px -5px 1px #a369bd; }
+    -webkit-box-shadow: 15px -10px 2px #a369bd;
+            box-shadow: 15px -10px 2px #a369bd; }
 
 .screenshot__image {
   width: 100%;
   height: 100%;
-  border: 2px solid #ffffff;
+  border: 3px solid #ffffff;
   border-radius: 5px; }
+  .screenshot__image--black {
+    border: 4px solid #000000; }
 
 .screenshot__aside {
   position: absolute;
@@ -469,9 +494,20 @@ section {
   width: 35%;
   height: 90%;
   border-radius: 5px;
-  -webkit-transform: translate(-85%, 5%);
-          transform: translate(-85%, 5%);
+  -webkit-transform: translate(-60%, 6%);
+          transform: translate(-60%, 6%);
   z-index: 1; }
+
+.screenshot__mockup {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10; }
+
+.screenshot__mobile {
+  width: 100%;
+  height: 100%;
+  padding: 30px 10px; }
 
 .contact__heading--accent {
   color: #fcb84b; }
@@ -479,13 +515,6 @@ section {
 .buttonStyle {
   border: none;
   background: none; }
-
-.portfolio__button {
-  height: 30px;
-  padding: 0 10px;
-  border-radius: 2px;
-  background-color: #ffffff;
-  color: #2c3e50; }
 
 .contact__form {
   display: -webkit-box;

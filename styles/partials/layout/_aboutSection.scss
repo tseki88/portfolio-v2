@@ -1,10 +1,15 @@
 .about {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    padding: 2rem 0 4rem;
+
+    &__section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 
     &__heading {
         flex: 0 1 100%;
+        margin-top: 0;
 
         &--accent {
             color: $colorOrangeDark;
@@ -12,7 +17,13 @@
     }
 
     &__container {
-        flex: 0 1 45%;
+        &--text {
+            flex-basis: 50%;
+        }
+
+        &--skills {
+            flex-basis: 40%;
+        }
     }
 }
 
