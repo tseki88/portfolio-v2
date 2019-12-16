@@ -267,6 +267,12 @@ h4 {
   font-size: 2.2rem;
   font-family: 'Nanum Brush Script', cursive; }
 
+.footer__copy {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 700; }
+
 body {
   position: relative;
   margin: 0;
@@ -382,7 +388,9 @@ a {
   margin: 0 auto; }
 
 .skill__icon {
-  font-size: 2.5rem; }
+  font-size: 2.5rem;
+  color: #c3272b;
+  text-shadow: 0px 0px 3px #c3272b; }
 
 .portfolio {
   position: relative;
@@ -469,10 +477,10 @@ a {
 .screenshot__image {
   width: 100%;
   height: 100%;
-  border: 3px solid #ffffff;
-  border-radius: 5px; }
-  .screenshot__image--black {
-    border: 4px solid #000000; }
+  border: 5px solid #4c221b;
+  -webkit-box-shadow: 0px 0px 3px 1px #ff454a;
+          box-shadow: 0px 0px 3px 1px #ff454a;
+  border-radius: 10px; }
 
 .screenshot__aside {
   position: absolute;
@@ -497,41 +505,96 @@ a {
   padding: 30px 10px; }
 
 .contact {
-  padding: 3rem 0; }
+  padding: 3rem 0;
+  background-image: url(../assets/ricepaper.png);
+  background-repeat: repeat; }
   .contact__container {
-    margin: 3rem auto;
-    border-radius: 20px; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+  .contact__subcontainer {
+    position: relative;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 80%;
+            flex: 0 1 80%;
+    padding: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap; }
+  .contact__form {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 85%;
+            flex: 0 1 85%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 2rem auto 3rem;
+    padding: 4rem;
+    background-image: url(../assets/bedge_grunge.png);
+    -webkit-box-shadow: 0 0 30px 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 30px 20px rgba(0, 0, 0, 0.1);
+    z-index: 3; }
 
-.buttonStyle {
-  border: none;
-  background: none; }
+.social__container {
+  position: absolute;
+  top: 0;
+  left: -150px;
+  padding: 4rem 0;
+  width: 40%;
+  max-width: 350px;
+  background-image: url(../assets/mooning.png);
+  -webkit-box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.1); }
 
-.contact__form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin: 2rem auto 3rem;
-  width: 800px; }
+.social__item {
+  margin: 2.6rem auto;
+  text-align: center; }
+
+.social__icon {
+  font-size: 3.6rem;
+  color: #ff4e20;
+  text-shadow: 0px 0px 3px #ff4e20; }
+  .social__icon:hover, .social__icon:focus {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    color: #c3272b;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s; }
 
 .form__input, .form__textarea {
   margin-bottom: 3px;
   padding: 10px 15px;
   border: none;
-  border-bottom: 1px solid #4c221b;
+  border-bottom: 1px dashed #4c221b;
   background: none; }
 
 .form__button {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 100%;
-          flex: 1 1 100%;
-  padding: 10px 15px;
+  margin-top: 20px;
   background-color: #ff4e20;
   color: #f6f6f6;
   text-shadow: 0px 0px 2px #f6f6f6;
   border-radius: 10px;
   -webkit-box-shadow: 0px 0px 2px 2px #ff4e20;
           box-shadow: 0px 0px 2px 2px #ff4e20; }
+
+.footer {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #ff4e20;
+  color: #ffffff; }
+  .footer__copy {
+    margin: 0; }
+
+.buttonStyle {
+  border: none; }

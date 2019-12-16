@@ -1,13 +1,81 @@
 .contact {
-    // background-color: $colorContact;
     padding: 3rem 0;
+    background-image: url(../assets/ricepaper.png);
+    background-repeat: repeat;
 
     &__container {
-        margin: 3rem auto;
-        border-radius: 20px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
     }
 
-    &__heading {
-        // color: $colorWhite;
+    &__subcontainer {
+        position: relative;
+        flex: 0 1 80%;
+        padding: 25px;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    
+    &__form {
+        flex: 0 1 85%;
+        display: flex;
+        flex-direction: column;
+        margin: 2rem auto 3rem;
+        padding: 4rem;
+        background-image: url(../assets/bedge_grunge.png);
+        box-shadow: 0 0 30px 20px rgba(0,0,0,.1);
+        z-index: 3;
+    }
+}
+
+.social {
+    &__container {
+        position: absolute;
+        top: 0;
+        left: -150px;
+        padding: 4rem 0;
+        width: 40%;
+        max-width: 350px;
+        background-image: url(../assets/mooning.png);
+        box-shadow: 0 0 20px 20px rgba(0,0,0,.1);
+    }
+
+    &__item {
+        margin: 2.6rem auto;
+        text-align: center;
+    }
+    
+    &__icon {
+        font-size: 3.6rem;
+        color: $colorOtan;
+        text-shadow: 0px 0px 3px $colorOtan;
+
+        &:hover,
+        &:focus {
+            transform: scale(1.2);
+            color: $colorAkabeni;
+            transition: all 0.5s;
+        }
+    }
+}
+
+.form {
+    &__input,
+    &__textarea {
+        margin-bottom: 3px;
+        padding: 10px 15px;
+        border: none;
+        border-bottom: 1px dashed $colorTobiiro;
+        background: none;
+    }
+
+    &__button {
+        margin-top: 20px;
+        background-color: $colorOtan;
+        color: #f6f6f6;
+        text-shadow: 0px 0px 2px #f6f6f6;
+        border-radius: 10px;
+        box-shadow: 0px 0px 2px 2px $colorOtan;
     }
 }
