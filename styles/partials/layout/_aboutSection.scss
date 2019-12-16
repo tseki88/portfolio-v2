@@ -1,6 +1,18 @@
 .about {
     padding: 2rem 0 4rem;
 
+    &__image {
+        margin: 0 auto;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    
+    &__photo {
+        width: 100%;
+    }
+
     &__section {
         display: flex;
         flex-wrap: wrap;
@@ -10,13 +22,10 @@
     &__heading {
         flex: 0 1 100%;
         margin-top: 0;
-
-        &--accent {
-            color: $colorOrangeDark;
-        }
     }
 
     &__container {
+
         &--text {
             flex-basis: 50%;
         }
@@ -30,6 +39,7 @@
 .skill {
     &__heading {
         margin-bottom: 15px;
+        text-align: center;
         text-decoration: underline;
     }
 
@@ -41,6 +51,7 @@
     &__item {
         flex: 0 1 20%;
         text-align: center;
+        margin: 0 auto;
     }
 
     &__icon {

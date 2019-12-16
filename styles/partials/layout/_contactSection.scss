@@ -1,7 +1,13 @@
 .contact {
+    // background-color: $colorContact;
+    padding: 3rem 0;
+
+    &__container {
+        margin: 3rem auto;
+        border-radius: 20px;
+    }
+
     &__heading {
-        &--accent {
-            color: $colorOrangeLight;
-        }
+        // color: $colorWhite;
     }
 }

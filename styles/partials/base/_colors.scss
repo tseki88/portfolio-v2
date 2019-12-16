@@ -1,19 +1,12 @@
 $colorWhite: #ffffff;
 $colorBlack: #000000;
-$colorBlueLight: #eff3f3;
-$colorBlueNavy: #2c3e50;
-$colorGrayDark: #555555;
-$colorGrayLight: #879cb0;
-$colorOrangeLight: #fcb84b;
-$colorOrangeDark: #fd5f42;
-$colorTeal: #49a0ae;
-$colorGreen: #22c48a;
-$colorPurple: #a369bd;
+$colorShuiro: #ff454a;
+$colorAkabeni: #c3272b;
+$colorTobiiro:#4c221b;
+$colorKurotobi: #351e1c;
+$colorOtan: #ff4e20;
 
-$colorPrimary: $colorBlueLight;
-$colorSecondary: $colorBlueNavy;
-
-$colorSectionPrimaryBackground: $colorPrimary;
-$colorSectionPrimaryFont: $colorGrayDark;
-$colorSectionSecondaryBackground: $colorSecondary;
-$colorSectionSecondaryFont: $colorPrimary;
+$colorHeading: $colorKurotobi;
+$colorSubheading: $colorTobiiro;
+$colorSectionPrimaryFont: $colorKurotobi;
+$colorSectionSecondaryFont: $colorTobiiro;

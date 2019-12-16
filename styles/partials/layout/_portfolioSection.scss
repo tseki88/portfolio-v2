@@ -1,10 +1,9 @@
 .portfolio {
+    position: relative;
+    padding: 3rem 0;
 
-    &__heading {
-
-        &--accent {
-            color: $colorGreen;
-        }
+    &__title {
+        margin: 0 0 15px;
     }
 
     &__item {
@@ -23,7 +22,7 @@
             .screenshot__aside {
                 left: none;
                 right: 0;
-                transform: translate(240%, 6%);
+                transform: translate(240%, 7%);
             }
         }
     }
@@ -51,7 +50,6 @@
         line-height: 28px;
         border-radius: 2px;
         background-color: $colorWhite;
-        color: $colorSecondary;
         text-align: center;
     }
 }
@@ -64,31 +62,16 @@
         height: 28px;
         line-height: 28px;
         border-radius: 2px;
-        color: $colorWhite;
         text-align: center;
-        font-weight: 600;
+        background-color: #FF4E20;
+        box-shadow: 0px 0px 2px 2px #FF4E20;
+        color: #f6f6f6;
     }
 
     &__container {
         
         display: flex;
         flex-wrap: wrap;
-
-        &--orange .language__item {
-            background-color: $colorOrangeLight;
-        }
-
-        &--teal .language__item {
-            background-color: $colorTeal;
-        }
-
-        &--green .language__item {
-            background-color: $colorGreen;
-        }
-
-        &--purple .language__item {
-            background-color: $colorPurple;
-        }
     }
 }
 
@@ -98,22 +81,6 @@
         width: 80%;
         height: 100%;
         border-radius: 5px;
-
-        &--orange {
-            box-shadow: -15px -10px 2px $colorOrangeLight;
-        }
-
-        &--teal {
-            box-shadow: 15px -10px 2px $colorTeal;
-        }
-
-        &--green {
-            box-shadow: -15px -10px 2px $colorGreen;
-        }
-
-        &--purple {
-            box-shadow: 15px -10px 2px $colorPurple;
-        }
     }
 
     &__image {
@@ -134,7 +101,7 @@
         width: 35%;
         height: 90%;
         border-radius: 5px;
-        transform: translate(-60%, 6%);
+        transform: translate(-60%, 7%);
         z-index: 1;
     }
 
