@@ -1,10 +1,11 @@
 .footer {
     margin: 0;
     padding: 10px 0;
-    background-color: $colorOtan;
+    background-color: $colorAkabeni;
     color: $colorWhite;
-
+    
     &__copy {
+        text-shadow: 0px 0px 5px $colorTobiiro;
         margin: 0;
     }
 }

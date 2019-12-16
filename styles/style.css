@@ -243,7 +243,7 @@ h4 {
   letter-spacing: 1px; }
 
 .about__subheading {
-  text-align: left; }
+  font-size: 2.5rem; }
 
 .about__text {
   letter-spacing: 1px;
@@ -258,6 +258,15 @@ h4 {
   font-size: 1.1rem;
   line-height: 1.4rem; }
 
+.skill__heading {
+  font-size: 1.2rem; }
+
+.skill__icon {
+  font-size: 2.6rem; }
+
+.social__icon {
+  font-size: 3.6rem; }
+
 .language__item,
 .portfolio__link {
   font-family: 'Nanum Brush Script', cursive;
@@ -268,9 +277,10 @@ h4 {
   font-family: 'Nanum Brush Script', cursive; }
 
 .footer__copy {
+  font-family: 'Nanum Brush Script', cursive;
   text-transform: uppercase;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 2.2rem;
   font-weight: 700; }
 
 body {
@@ -361,6 +371,11 @@ a {
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;
     margin-top: 0; }
+  .about__subheading {
+    color: #4c221b;
+    margin-top: 0;
+    letter-spacing: 30px;
+    text-decoration: underline; }
   .about__container--text {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%; }
@@ -369,9 +384,7 @@ a {
         flex-basis: 40%; }
 
 .skill__heading {
-  margin-bottom: 15px;
-  text-align: center;
-  text-decoration: underline; }
+  text-align: center; }
 
 .skill__list {
   display: -webkit-box;
@@ -381,16 +394,23 @@ a {
       flex-wrap: wrap; }
 
 .skill__item {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 20%;
-          flex: 0 1 20%;
+  margin: 0 auto;
   text-align: center;
-  margin: 0 auto; }
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s; }
+  .skill__item:hover, .skill__item:focus {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4); }
+    .skill__item:hover .skill__icon, .skill__item:focus .skill__icon {
+      color: #ff4e20; }
 
 .skill__icon {
-  font-size: 2.5rem;
   color: #c3272b;
-  text-shadow: 0px 0px 3px #c3272b; }
+  text-shadow: 0px 0px 3px #c3272b;
+  -webkit-transition: all 1s;
+  transition: all 1s; }
 
 .portfolio {
   position: relative;
@@ -406,7 +426,9 @@ a {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin: 200px 0; }
+    margin: 200px 0;
+    padding: 10rem 3rem;
+    background-image: url(../assets/bedge_grunge.png); }
     .portfolio__item:nth-of-type(2n + 1) {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: reverse;
@@ -446,7 +468,7 @@ a {
     height: 28px;
     line-height: 28px;
     border-radius: 2px;
-    background-color: #ffffff;
+    background-color: #f5f5f5;
     text-align: center; }
 
 .language__item {
@@ -562,15 +584,16 @@ a {
   text-align: center; }
 
 .social__icon {
-  font-size: 3.6rem;
-  color: #ff4e20;
-  text-shadow: 0px 0px 3px #ff4e20; }
+  color: #c3272b;
+  text-shadow: 0px 0px 3px #c3272b;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s; }
   .social__icon:hover, .social__icon:focus {
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
-    color: #c3272b;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s; }
+    color: #ff4e20; }
 
 .form__input, .form__textarea {
   margin-bottom: 3px;
@@ -580,6 +603,7 @@ a {
   background: none; }
 
 .form__button {
+  border: none;
   margin-top: 20px;
   background-color: #ff4e20;
   color: #f6f6f6;
@@ -591,10 +615,8 @@ a {
 .footer {
   margin: 0;
   padding: 10px 0;
-  background-color: #ff4e20;
-  color: #ffffff; }
+  background-color: #c3272b;
+  color: #f5f5f5; }
   .footer__copy {
+    text-shadow: 0px 0px 5px #4c221b;
     margin: 0; }
-
-.buttonStyle {
-  border: none; }

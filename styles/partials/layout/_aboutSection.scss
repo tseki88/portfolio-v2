@@ -24,8 +24,14 @@
         margin-top: 0;
     }
 
-    &__container {
+    &__subheading {
+        color: $colorTobiiro;
+        margin-top: 0;
+        letter-spacing: 30px;
+        text-decoration: underline;
+    }
 
+    &__container {
         &--text {
             flex-basis: 50%;
         }
@@ -38,25 +44,34 @@
 
 .skill {
     &__heading {
-        margin-bottom: 15px;
         text-align: center;
-        text-decoration: underline;
     }
 
     &__list {
         display: flex;
         flex-wrap: wrap;
     }
-
+    
     &__item {
-        flex: 0 1 20%;
-        text-align: center;
         margin: 0 auto;
-    }
+        text-align: center;
+        transform: scale(1);
+        transition: all 0.5s;
 
+        &:hover,
+        &:focus {
+            transform: scale(1.4);
+    
+            .skill__icon {
+                color: $colorOtan;
+            }
+        }
+    }
+    
     &__icon {
-        font-size: 2.5rem;
         color: $colorAkabeni;
         text-shadow: 0px 0px 3px $colorAkabeni;
+        transition: all 1s;
+        
     }
 }
