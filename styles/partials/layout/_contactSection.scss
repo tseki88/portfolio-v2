@@ -24,7 +24,8 @@
         margin: 2rem auto 3rem;
         padding: 4rem;
         background-image: url(../assets/bedge_grunge.png);
-        box-shadow: 0 0 30px 20px rgba(0,0,0,.1);
+        box-shadow: 0 0 30px 20px rgba(0,0,0,.25);
+        border-radius: 2px;
         z-index: 3;
     }
 }
@@ -46,23 +47,35 @@
         text-align: center;
     }
     
-    &__icon {
+    &__link {
         color: $colorAkabeni;
-        text-shadow: 0px 0px 3px $colorAkabeni;
         transform: scale(1);
-        transition: all 0.5s;
+        text-shadow: 0px 0px 3px $colorAkabeni;
 
-        &:hover,
         &:focus {
-            transform: scale(1.2);
-            color: $colorOtan;
+            outline: none;
         }
+
+        &:hover .social__icon,
+        &:focus .social__icon {
+            padding: 5px;
+            border-radius: 5px;
+            border: 4px solid $colorAkabeni;
+            box-shadow: 0 0 2px 2px $colorAkabeni;
+            text-shadow: 0 0 3px $colorAkabeni;
+            transform: scale(1.1);
+        }
+    }
+    
+    &__icon {
+        transition: all 0.5s;
     }
 }
 
 .form {
     &__input,
     &__textarea {
+        color: $colorTobiiro;
         margin-bottom: 3px;
         padding: 10px 15px;
         border: none;

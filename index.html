@@ -25,6 +25,7 @@
                 <h1 class="header__heading__main">Hello, I'm <span class="header__heading__main--accent">Steve Seki</span>.</h1>
                 <h2 class="header__heading__sub">Front-End Web Developer</h2>
             </div>
+            <div class="header__bird"><img src="./assets/bird.png" alt=""></div>
         </div>
     </header>
     <!-- About Section -->
@@ -35,10 +36,12 @@
                 <div class="about__image">
                     <img class="about__photo" src="./assets/2019-fall-Steve-Seki-3(1).jpg" alt="">
                 </div>
-                <p class="about__text">I'm a front-end web developer based in Toronto. I like problem solving and working with complex ideas. It's no surprise that I love board games and ones with a heavy   come from a background in hospitality and retail management.</p> 
-                <p class="about__text">My strengths involve problem solving approaches looking at different perspectives, taking into consideration the bigger picture and identifying the core cause of the issues.</p>
-                <p class="about__text">When I'm not programming, I am .</p>
+                <div class="about__textContainer">
+                    <p class="about__text">I'm a front-end web developer based in Toronto. I like problem solving and working with complex ideas. It's no surprise that I love board games and ones with a heavy   come from a background in hospitality and retail management.</p> 
+                    <p class="about__text">My strengths involve problem solving approaches looking at different perspectives, taking into consideration the bigger picture and identifying the core cause of the issues.</p>
+                    <p class="about__text">When I'm not programming, I am .</p>
                 </div>
+            </div>
             <div class="about__container about__container--skills">
                 <h3 class="about__subheading" >Tool Kit</h3>
                 <ul class="category__list">
@@ -63,7 +66,7 @@
                         <ul class="skill__list">
                             <li class="skill__item"><i class="skill__icon devicon-git-plain"></i></li>
                             <li class="skill__item"><i class="skill__icon devicon-github-plain"></i></li>
-                            <li class="skill__item"><i class="skill__icon devicon-gulp-plain"></i></li>
+                            <li class="skill__item"><i class="skill__icon devicon-google-plain"></i></li>
                         </ul>
                     </li>                    
                     <li class="category__item">
@@ -92,8 +95,8 @@
                         </ul>
                         <p class="portfolio__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quisquam provident iure quasi deleniti tempore ullam, saepe ipsam consequatur, aperiam deserunt tenetur vero dignissimos officia ipsum aut. Accusantium, suscipit adipisci.</p>
                         <ul class="portfolio__linkContainer">
-                            <li class="portfolio__link"><a>GitHub</a></li>
-                            <li class="portfolio__link"><a>Live Project</a></li>
+                            <li class="portfolio__link"><a href="https://github.com/tseki88/steveSekiProjectThree" target="blank">GitHub</a></li>
+                            <li class="portfolio__link"><a href="https://tseki88.github.io/steveSekiProjectThree" target="blank">Live Project</a></li>
                         </ul>
                     </div>
                     <div class="portfolio__screenshot">
@@ -107,6 +110,7 @@
                     </div>
                 </div>
                 <div class="portfolio__item">
+                    <!-- <div class="portfolio__background"> -->
                     <div class="portfolio__text">
                         <h3 class="portfolio__title">Pokemon Blackjack</h3>
                         <ul class="language__container language__container--teal">
@@ -117,8 +121,8 @@
                         </ul>
                         <p class="portfolio__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quisquam provident iure quasi deleniti tempore ullam, saepe ipsam consequatur, aperiam deserunt tenetur vero dignissimos officia ipsum aut. Accusantium, suscipit adipisci.</p>
                         <ul class="portfolio__linkContainer">
-                            <li class="portfolio__link"><a>GitHub</a></li>
-                            <li class="portfolio__link"><a>Live Project</a></li>
+                            <li class="portfolio__link"><a href="https://github.com/pokemonBlackJack/pokemonBlackJack" target="blank">GitHub</a></li>
+                            <li class="portfolio__link"><a href="https://pokemonblackjack.github.io/pokemonBlackJack" target="blank">Live Project</a></li>
                         </ul>
                     </div>
                     <div class="portfolio__screenshot">
@@ -130,6 +134,7 @@
                             <img class="screenshot__image screenshot__image--black" src="./assets/screen_poke.png" alt="">
                         </div>
                     </div>
+                <!-- </div> -->
                 </div>
                 <div class="portfolio__item">
                     <div class="portfolio__text">
@@ -141,8 +146,8 @@
                         </ul>
                         <p class="portfolio__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quisquam provident iure quasi deleniti tempore ullam, saepe ipsam consequatur, aperiam deserunt tenetur vero dignissimos officia ipsum aut. Accusantium, suscipit adipisci.</p>
                         <ul class="portfolio__linkContainer">
-                            <li class="portfolio__link"><a>GitHub</a></li>
-                            <li class="portfolio__link"><a>Live Project</a></li>
+                            <li class="portfolio__link"><a href="https://github.com/tseki88/steveSekiProjectFive" target="blank">GitHub</a></li>
+                            <li class="portfolio__link"><a href="https://tseki88.github.io/steveSekiProjectFive" target="blank">Live Project</a></li>
                         </ul>
                     </div>
                     <div class="portfolio__screenshot">
@@ -165,9 +170,9 @@
             <div class="contact__container">
                 <div class="contact__subcontainer">
                         <ul class="social__container">
-                                <li class="social__item"><a class="social__link" aria-label="This link will direct you to Steve Seki's GitHub page."><i class="social__icon fab fa-github"></i></a></li>
-                                <li class="social__item"><a class="social__link" aria-label="This link will direct you to Steve Seki's twitter page."><i class="social__icon fab fa-twitter"></i></a></li>
-                                <li class="social__item"><a class="social__link" aria-label="This link will direct you to Steve Seki's linkedIn page."><i class="social__icon fab fa-linkedin"></i></a></li>
+                                <li class="social__item"><a class="social__link" aria-label="This link will open a new tab which directs you to Steve Seki's GitHub page." href="https://github.com/tseki88" target="blank"><i class="social__icon fab fa-github"></i></a></li>
+                                <li class="social__item"><a class="social__link" aria-label="This link will open a new tab which directs you to Steve Seki's twitter page." href="https://twitter.com/steve_seki" target="blank"><i class="social__icon fab fa-twitter"></i></a></li>
+                                <li class="social__item"><a class="social__link" aria-label="This link will open a new tab which directs you to Steve Seki's linkedIn page." href="https://www.linkedin.com/in/sekisteve/" target="blank"><i class="social__icon fab fa-linkedin"></i></a></li>
                             </ul>
                     <form class="contact__form" action="">
                         <label class="form__label" for="name"></label>

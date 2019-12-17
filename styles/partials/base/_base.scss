@@ -1,8 +1,12 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     position: relative;
     margin: 0;
     width: 100%;
-    background-image: url(../assets/dust_scratches.png);
+    background: url(../assets/dust_scratches.png);
 }
 
 ul {
@@ -28,13 +32,8 @@ a {
 }
 
 .section {
-    &--primary {
-        // background-color: $colorSectionPrimaryBackground;
-        color: $colorSectionPrimaryFont;
-    }
 
     &--secondary {
-        // background-color: $colorBlueLight;
         color: $colorKurotobi;
     }
 }

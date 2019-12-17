@@ -2,6 +2,19 @@
     position: relative;
     height: 100vh;
 
+    &__bird {
+        position: absolute;
+        bottom: -100px;
+        left: -50px;
+        width: 50%;
+        min-width: 380px;
+        max-width: 700px;
+
+        img {
+            width: 100%;
+        }
+    }
+
     &__heading {
         &__container {
             position: absolute;

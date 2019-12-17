@@ -10,9 +10,11 @@
         display: flex;
         flex-wrap: nowrap;
         justify-content: space-between;
-        margin: 200px 0;
-        padding: 10rem 3rem;
+        margin: 80px 0;
+        padding: 8rem 3rem;
         background-image: url(../assets/bedge_grunge.png);
+        // background-image: url(../assets/mooning.png);
+        box-shadow: 0 0 30px 20px rgba(0,0,0,.1);
     
         &:nth-of-type(2n + 1) {
             flex-direction: row-reverse;
@@ -28,6 +30,10 @@
             }
         }
     }
+
+    // &__background {
+
+    // }
     
     &__text {
         width: 50%;
@@ -38,6 +44,10 @@
         flex-wrap: nowrap;
         justify-content: flex-end;
         width: 45%;
+        // background-image: url(../assets/mooning.png);
+        // background-image: url(../assets/bedge_grunge.png);
+        background-size: 100vw;
+        overflow: visible;
     }
 
     &__linkContainer {
@@ -47,26 +57,32 @@
 
     &__link {
         padding: 0 10px;
-        margin-right: 5px;
+        margin-right: 10px;
         height: 28px;
         line-height: 28px;
         border-radius: 2px;
         background-color: $colorWhite;
         text-align: center;
+        box-shadow: 0px 0px 2px 2px $colorWhite;
+
+        // fix BEM later: __link to __item, and the a to __link
+        a {
+            color: inherit;
+        }
     }
 }
 
 .language {
     &__item {
         padding: 0 10px;
-        margin-right: 5px;
+        margin-right: 10px;
         height: 28px;
         line-height: 28px;
         border-radius: 2px;
         text-align: center;
-        background-color: #FF4E20;
-        box-shadow: 0px 0px 2px 2px #FF4E20;
-        color: #f6f6f6;
+        background-color: $colorOtan;
+        box-shadow: 0px 0px 2px 2px $colorOtan;
+        color: $colorWhite;
     }
 
     &__container {
@@ -101,7 +117,7 @@
         transform: translate(-60%, 7%);
         z-index: 1;
     }
-
+    
     &__mockup {
         position: absolute;
         width: 100%;
