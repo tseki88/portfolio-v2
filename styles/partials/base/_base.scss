@@ -19,10 +19,31 @@ a {
     text-decoration: none;
 }
 
+.skipLink a {
+    background-color: $colorShojohi;
+    color: $colorWhite;
+    font-weight: 700;
+    position: absolute;
+    top: 50px;
+    left: -2000px;
+    padding: 20px;
+    
+    &:focus {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        text-decoration: underline;
+    }
+}
+
 .wrapper {
     width: 80%;
     max-width: 1400px;
     margin: 0 auto;
+
+    @include respond-to("huge") {
+        width: 90%;
+    }
 }
 
 .mobileHide {

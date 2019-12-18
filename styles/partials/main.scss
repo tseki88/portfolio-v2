@@ -1,11 +1,11 @@
 @import
-  'abstracts/setup';
+  'abstracts/setup',
+  'abstracts/mixins';
 
 @import
   'base/colors',
   'base/typography',
-  'base/base',
-  'base/animations';
+  'base/base';
 
 @import
   'layout/headerSection',

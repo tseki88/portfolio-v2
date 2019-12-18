@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Steve Seki - Portfolio</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+    <title>Steve Seki</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/tonystar/float-label-css/v1.0.2/dist/float-label.min.css"/>
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <script src="https://kit.fontawesome.com/0dd18e4074.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- Header Section -->
     <header id="home" class="header section--secondary">
+        <div class="skipLink"><a href="#about">Skip to main content</a></div>
         <div class="wrapper">
             <nav class="nav">
                 <ul class="nav__list">
@@ -25,21 +29,21 @@
                 <h1 class="header__heading__main">Hello, I'm <span class="header__heading__main--accent">Steve Seki</span>.</h1>
                 <h2 class="header__heading__sub">Front-End Web Developer</h2>
             </div>
-            <div class="header__bird"><img src="./assets/bird.png" alt=""></div>
+            <div class="header__bird"><img src="./assets/bird.png" alt="drawing of bird on the header section"></div>
         </div>
     </header>
     <!-- About Section -->
-    <section id="about" class="about">
+    <section id="about" class="about" >
         <div class="about__section wrapper">
             <h2 class="about__heading">About</h2>
             <div class="about__container about__container--text">
                 <div class="about__image">
-                    <img class="about__photo" src="./assets/2019-fall-Steve-Seki-3(1).jpg" alt="">
+                    <img class="about__photo" src="./assets/2019-fall-Steve-Seki-3(1).jpg" alt="profile photo of Steve Seki.">
                 </div>
                 <div class="about__textContainer">
-                    <p class="about__text">I'm a front-end web developer based in Toronto. I like problem solving and working with complex ideas. It's no surprise that I love board games and ones with a heavy   come from a background in hospitality and retail management.</p> 
-                    <p class="about__text">My strengths involve problem solving approaches looking at different perspectives, taking into consideration the bigger picture and identifying the core cause of the issues.</p>
-                    <p class="about__text">When I'm not programming, I am .</p>
+                    <p class="about__text">I'm a front-end web developer based in Toronto. I come from a hospitality and retail management background, where guest experience and satisfaction is always of number one priority.</p>
+                    <p class="about__text">On my free time I'm usually playing content-heavy board games or pracstinating about getting and staying active. I love problem solving and working with complex ideas. I value the team environment in a workplace above all else.</p> 
+                    <p class="about__text about__text--accent">When I'm not programming, I am . </p>
                 </div>
             </div>
             <div class="about__container about__container--skills">
@@ -48,31 +52,31 @@
                     <li class="category__item">
                         <h4 class="skill__heading">Markup & Styling</h4>
                         <ul class="skill__list">
-                            <li class="skill__item"><i class="skill__icon devicon-html5-plain"></i></li>
-                            <li class="skill__item"><i class="skill__icon devicon-css3-plain"></i></li>
-                            <li class="skill__item"><i class="skill__icon devicon-sass-original"></i></li>
+                            <li class="skill__item"><i class="skill__icon devicon-html5-plain" aria-label="html5 icon"></i></li>
+                            <li class="skill__item"><i class="skill__icon devicon-css3-plain" aria-label="css3 icon"></i></li>
+                            <li class="skill__item"><i class="skill__icon devicon-sass-original" aria-label="sass compiler icon"></i></li>
                         </ul>
                     </li>
                     <li class="category__item">
                         <h4 class="skill__heading">Scripting</h4>
                         <ul class="skill__list">
-                            <li class="skill__item"><i class="skill__icon devicon-javascript-plain"></i></li>
-                            <li class="skill__item"><i class="skill__icon devicon-jquery-plain"></i></li>
-                            <li class="skill__item"><i class="skill__icon devicon-react-original"></i></li>
+                            <li class="skill__item"><i class="skill__icon devicon-javascript-plain" aria-label="javascript icon"></i></li>
+                            <li class="skill__item"><i class="skill__icon devicon-jquery-plain" aria-label="jquery library icon"></i></li>
+                            <li class="skill__item"><i class="skill__icon devicon-react-original" aria-label="react framework icon"></i></li>
                         </ul>
                     </li>
                     <li class="category__item">
                         <h4 class="skill__heading">Tools & Misc</h4>
                         <ul class="skill__list">
-                            <li class="skill__item"><i class="skill__icon devicon-git-plain"></i></li>
-                            <li class="skill__item"><i class="skill__icon devicon-github-plain"></i></li>
-                            <li class="skill__item"><i class="skill__icon devicon-google-plain"></i></li>
+                            <li class="skill__item"><i class="skill__icon devicon-git-plain" aria-label="git version control system icon"></i></li>
+                            <li class="skill__item"><i class="skill__icon devicon-github-plain" aria-label="github icon"></i></li>
+                            <li class="skill__item"><i class="skill__icon devicon-google-plain" aria-label="google icon... I know how to google"></i></li>
                         </ul>
                     </li>                    
                     <li class="category__item">
                         <h4 class="skill__heading">Interested in Learning</h4>
                         <ul class="skill__list">
-                            <li class="skill__item"><i class="skill__icon devicon-nodejs-plain"></i></li>
+                            <li class="skill__item"><i class="skill__icon devicon-nodejs-plain" aria-label="node js icon"></i></li>
                         </ul>
                     </li>
                 </ul>
@@ -89,74 +93,69 @@
                 <div class="portfolio__item">
                     <div class="portfolio__text">
                         <h3 class="portfolio__title">LUDR Madness</h3>
-                        <ul class="language__container language__container--orange">
+                        <ul class="language__container">
                             <li class="language__item">jQuery</li>
                             <li class="language__item">Sass</li>
                         </ul>
-                        <p class="portfolio__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quisquam provident iure quasi deleniti tempore ullam, saepe ipsam consequatur, aperiam deserunt tenetur vero dignissimos officia ipsum aut. Accusantium, suscipit adipisci.</p>
+                        <p class="portfolio__description">Left, Up, Down, Right - based off the classic game Dance Dance Revolution. Lots of fun on mobile with 3 different difficulty levels. Can you obtain the highest score?</p>
                         <ul class="portfolio__linkContainer">
-                            <li class="portfolio__link"><a href="https://github.com/tseki88/steveSekiProjectThree" target="blank">GitHub</a></li>
-                            <li class="portfolio__link"><a href="https://tseki88.github.io/steveSekiProjectThree" target="blank">Live Project</a></li>
+                            <li class="portfolio__button"><a class="portfolio__link" href="https://github.com/tseki88/steveSekiProjectThree" target="blank" aria-label="This link will open a new tab which directs you to the project's GitHub repository."><i class="portfolio__icon fab fa-github"></i> GitHub</a></li>
+                            <li class="portfolio__button"><a class="portfolio__link" href="https://tseki88.github.io/steveSekiProjectThree" target="blank" aria-label="This link will open a new tab which directs you to the project's live page."><i class="portfolio__icon fas fa-external-link-square-alt"></i> Live Project</a></li>
                         </ul>
                     </div>
                     <div class="portfolio__screenshot">
-                        <div class="screenshot__border screenshot__border--orange">
+                        <div class="screenshot__border">
                             <div class="screenshot__aside">
-                                <img src="./assets/mockup_mobile.png" alt="" class="screenshot__mockup">
-                                <img src="./assets/screen_ludr_mobile.png" alt="" class="screenshot__mobile">
+                                <img class="screenshot__mobile" src="./assets/mobile_ludr.png" alt="mobile screenshot of LUDR project">
                             </div>
-                            <img class="screenshot__image" src="./assets/screen_ludr.png" alt="">
+                            <img class="screenshot__image" src="./assets/screen_ludr.png" alt="desktop screenshot of LUDR project">
                         </div>
                     </div>
                 </div>
                 <div class="portfolio__item">
-                    <!-- <div class="portfolio__background"> -->
                     <div class="portfolio__text">
                         <h3 class="portfolio__title">Pokemon Blackjack</h3>
-                        <ul class="language__container language__container--teal">
+                        <ul class="language__container">
                             <li class="language__item">React</li>
-                            <li class="language__item">Group Project</li>
+                            <li class="language__item">Mob Programming</li>
                             <li class="language__item">Rest API</li>
-                            <li class="language__item">CSS</li>
+                            <li class="language__item">CSS3</li>
                         </ul>
-                        <p class="portfolio__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quisquam provident iure quasi deleniti tempore ullam, saepe ipsam consequatur, aperiam deserunt tenetur vero dignissimos officia ipsum aut. Accusantium, suscipit adipisci.</p>
+                        <p class="portfolio__description">Make sure to turn up the sound for a breeze of nostalgia. A BlackJack game with a pokemon theme, play against another player or 2 computers. Pay close attention to when either player wins. Built together with my amazing group <a class="portfolio__redirect" href="http://www.emmafattori.com/" aria-label="This link will direct you to Emma Fattori's portfolio page." target="blank">Emma Fattori</a>, <a class="portfolio__redirect" href="https://juancodes.com/" aria-label="This link will direct you to Juan Acaiturri" target="blank">Juan Acaiturri</a> and Howard Chen.</p>
                         <ul class="portfolio__linkContainer">
-                            <li class="portfolio__link"><a href="https://github.com/pokemonBlackJack/pokemonBlackJack" target="blank">GitHub</a></li>
-                            <li class="portfolio__link"><a href="https://pokemonblackjack.github.io/pokemonBlackJack" target="blank">Live Project</a></li>
+                            <li class="portfolio__button"><a class="portfolio__link" href="https://github.com/pokemonBlackJack/pokemonBlackJack" target="blank" aria-label="This link will open a new tab which directs you to the project's github repository page."><i class="portfolio__icon fab fa-github"></i> GitHub</a></li>
+                            <li class="portfolio__button"><a class="portfolio__link" href="https://pokemonblackjack.github.io/pokemonBlackJack" target="blank" aria-label="This link will open a new tab which directs you to the project's live page."><i class="portfolio__icon fas fa-external-link-square-alt"></i> Live Project</a></li>
                         </ul>
                     </div>
                     <div class="portfolio__screenshot">
-                        <div class="screenshot__border screenshot__border--teal">
+                        <div class="screenshot__border">
                             <div class="screenshot__aside">
-                                <img src="./assets/mockup_mobile.png" alt="" class="screenshot__mockup">
-                                <img src="./assets/screen_poke_mobile.png" alt="" class="screenshot__mobile">
+                                <img class="screenshot__mobile" src="./assets/mobile_poke.png" alt="mobile screenshot of pokemon blackjack">
                             </div>
-                            <img class="screenshot__image screenshot__image--black" src="./assets/screen_poke.png" alt="">
+                            <img class="screenshot__image" src="./assets/screen_poke.png" alt="desktop screenshot of pokemon blackjack">
                         </div>
                     </div>
-                <!-- </div> -->
                 </div>
                 <div class="portfolio__item">
                     <div class="portfolio__text">
                         <h3 class="portfolio__title">Board Game Tool Kit</h3>
-                        <ul class="language__container language__container--green">
+                        <ul class="language__container">
                             <li class="language__item">React</li>
                             <li class="language__item">Firebase</li>
                             <li class="language__item">Sass</li>
                         </ul>
-                        <p class="portfolio__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quisquam provident iure quasi deleniti tempore ullam, saepe ipsam consequatur, aperiam deserunt tenetur vero dignissimos officia ipsum aut. Accusantium, suscipit adipisci.</p>
+                        <p class="portfolio__description">Board game fans rejoice! An all in one tool kit for different components based on you and your friends needs. Currently comes with a score card, timer and stop watch. Stay tuned for more additions to come!</p>
                         <ul class="portfolio__linkContainer">
-                            <li class="portfolio__link"><a href="https://github.com/tseki88/steveSekiProjectFive" target="blank">GitHub</a></li>
-                            <li class="portfolio__link"><a href="https://tseki88.github.io/steveSekiProjectFive" target="blank">Live Project</a></li>
+                            <li class="portfolio__button"><a class="portfolio__link" href="https://github.com/tseki88/steveSekiProjectFive" target="blank" aria-label="This link will open a new tab which directs you to the project's github repository page."><i class="portfolio__icon fab fa-github"></i> GitHub</a></li>
+                            <li class="portfolio__button"><a class="portfolio__link" href="https://tseki88.github.io/steveSekiProjectFive" target="blank" aria-label="This link will open a new tab which directs you to the project's live page."><i class="portfolio__icon fas fa-external-link-square-alt"></i> Live Project</a></li>
                         </ul>
                     </div>
                     <div class="portfolio__screenshot">
-                        <div class="screenshot__border screenshot__border--green">
+                        <div class="screenshot__border">
                             <div class="screenshot__aside">
-                                <img src="./assets/mockup_mobile.png" alt="" class="screenshot__mockup">
-                                <img src="./assets/screen_bgtool_mobile.png" alt="" class="screenshot__mobile">
+                                <img class="screenshot__mobile" src="./assets/mobile_bgtool.png" alt="mobile screenshot of board game toolkit project">
                             </div>
-                            <img class="screenshot__image" src="./assets/screen_bgtool.png" alt="">
+                            <img class="screenshot__image" src="./assets/screen_bgtool.png" alt="desktop screenshot of board game toolkit project">
                         </div>
                     </div>
                 </div>
@@ -174,14 +173,17 @@
                                 <li class="social__item"><a class="social__link" aria-label="This link will open a new tab which directs you to Steve Seki's twitter page." href="https://twitter.com/steve_seki" target="blank"><i class="social__icon fab fa-twitter"></i></a></li>
                                 <li class="social__item"><a class="social__link" aria-label="This link will open a new tab which directs you to Steve Seki's linkedIn page." href="https://www.linkedin.com/in/sekisteve/" target="blank"><i class="social__icon fab fa-linkedin"></i></a></li>
                             </ul>
-                    <form class="contact__form" action="">
+                    <form class="contact__form" id="contact__form" action="https://formspree.io/xknowaya" method="POST" autocomplete="off">
                         <label class="form__label" for="name"></label>
                         <input class="form__input" type="text" name="name" id="name" placeholder="Name" required>
                         <label class="form__label" for="email"></label>
                         <input class="form__input" type="email" name="email" id="email" placeholder="Email Address" required>
                         <label class="form__label" for="message"></label>
                         <textarea class="form__textarea" name="message" id="message" cols="25" rows="10" placeholder="Your Message" required></textarea>
-                        <input type="submit" class="form__button" value="Submit">
+                        <input type="submit" class="form__button" value="Submit" aria-label="this will submit the completed form">
+                        <div class="contact__form__status--whitespace">
+                            <p class="contact__form__status" id="contact__form__status"></p>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -190,10 +192,10 @@
     <!-- Footer Section -->
     <footer class="footer">
         <div class="wrapper">
-            <p class="footer__copy"><small>Created by Steve Seki - 2019</small></p>
+            <p class="footer__copy"><small>Steve Seki - Juno College 2019</small></p>
         </div>
     </footer>
-    <script type="text/javascript" src="./scripts/pts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="./scripts/script.js"></script>
 </body>
 </html>

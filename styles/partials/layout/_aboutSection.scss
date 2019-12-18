@@ -4,21 +4,31 @@
     box-shadow: 0 0 30px 20px rgba(0,0,0,.2);
 
     &__image {
-        margin: 0 auto;
-        width: 300px;
-        height: 300px;
-        border-radius: 50%;
+        margin: 0 auto 2rem;
+        width: 380px;
+        height: 450px;
+        box-shadow: 0 0 10px 3px rgba($color: $colorTobiiro, $alpha: 0.8);
         overflow: hidden;
+
+        @include respond-to("tiny") {
+            width: 80%;
+            height: unset;
+        }
     }
     
     &__photo {
         width: 100%;
+        transform: scale(1.1);
     }
 
     &__section {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+
+        @include respond-to("medium") {
+            flex-direction: column;
+        }
     }
 
     &__heading {
@@ -36,31 +46,43 @@
     &__container {
         &--text {
             flex-basis: 50%;
+
+            @include respond-to("medium") {
+                width: 80%;
+                margin: 0 auto;
+                text-align: center;
+                padding-bottom: 50px;
+            }
         }
 
         &--skills {
-            flex-basis: 35%;
+            flex-basis: 40%;
+            max-width: 500px;
+            min-width: 400px;
             background-image: url(../assets/ricepaper.png);
             box-shadow: 0 0 30px 20px rgba(0,0,0,.2);
-            padding: 2rem 2rem 1rem;
-        }
-    }
-}
+            padding: 3rem 2rem;
 
-.category__item {
-    &::after {
-        content: "- - -";
-        display: block;
-        text-align: center;
-        margin-top: 0.5rem;
-        letter-spacing: 5px;
-        text-shadow: 0px 0px 3px $colorTobiiro;
+            @include respond-to("medium") {
+                margin: 3rem auto 0;
+            }
+
+            @include respond-to("small") {
+                margin: 0;
+            }
+
+            @include respond-to("tiny") {
+                min-width: unset;
+                padding: 1rem 0.3rem;
+            }
+        }
     }
 }
 
 .skill {
     &__heading {
         margin: 0.8rem 0;
+        padding-top: 0.8rem;
         text-align: center;
     }
 
@@ -72,15 +94,10 @@
     &__item {
         margin: 0 auto;
         text-align: center;
-        transform: scale(1);
-        transition: all 0.5s;
 
-        &:hover,
-        &:focus {
-            transform: scale(1.4);
-    
+        &:hover {
             .skill__icon {
-                color: $colorOtan;
+                text-shadow: 0px 0px 2px $colorWhite;
             }
         }
     }
@@ -89,6 +106,5 @@
         color: $colorAkabeni;
         text-shadow: 0px 0px 3px $colorAkabeni;
         transition: all 1s;
-        
     }
 }

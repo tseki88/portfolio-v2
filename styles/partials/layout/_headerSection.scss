@@ -7,8 +7,24 @@
         bottom: -100px;
         left: -50px;
         width: 50%;
-        min-width: 380px;
         max-width: 700px;
+
+        @include respond-to("landscape") {
+            width: 40%;
+        }
+
+        @include respond-to("medium") {
+            width: 40%;
+        }
+
+        @include respond-to("small") {
+            bottom: 0;
+        }
+
+        @include respond-to("tiny") {
+            left: -20px;
+            width: 60%;
+        }
 
         img {
             width: 100%;
@@ -22,7 +38,7 @@
             left: 50%;
             width: 100%;
             transform: translate(-50%, -50%);
-            text-shadow: 0px 0px 1px $colorShuiro;
+            text-shadow: 0px 0px 2px $colorShuiro;
         }
 
         &__main {
@@ -30,7 +46,7 @@
 
             &--accent {
                 color: $colorShuiro;
-                text-shadow: 0px 0px 1px $colorShuiro;
+                text-shadow: 0px 0px 2px $colorShuiro;
             }
         }
 

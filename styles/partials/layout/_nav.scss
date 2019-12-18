@@ -5,15 +5,24 @@
         display: flex;
         flex-wrap: nowrap;
         justify-content: flex-end;
+
+        @include respond-to("tiny") {
+            justify-content: space-around;
+        }
     }
 
     &__item {
         margin-left: 20px;
+
+        @include respond-to("tiny") {
+            margin-left: 10px;
+        }
     }
 
     &__link {
         position: relative;
         color: $colorTobiiro;
+        text-shadow: 0px 0px 1px $colorShuiro;
 
         &::after {
             content: " ";
@@ -33,6 +42,7 @@
             &::after {
                 border-bottom: 2px solid $colorTobiiro;
                 transform: scaleX(1);
+                bottom: -1px;
             }
         }
     }

@@ -4,6 +4,10 @@
 
     &__title {
         margin: 0 0 15px;
+
+        @include respond-to("large") {
+            margin: 2rem 0 1rem;
+        }
     }
 
     &__item {
@@ -13,75 +17,153 @@
         margin: 80px 0;
         padding: 8rem 3rem;
         background-image: url(../assets/bedge_grunge.png);
-        // background-image: url(../assets/mooning.png);
         box-shadow: 0 0 30px 20px rgba(0,0,0,.1);
     
         &:nth-of-type(2n + 1) {
             flex-direction: row-reverse;
+            
+            @include respond-to("large") {
+                flex-direction: column-reverse;
+                align-items: center;
+                padding: 3rem;
+            }
+
+            @include respond-to("tiny") {
+                padding: 3rem 1rem;
+            }
 
             .portfolio__screenshot {
                 flex-direction: row-reverse;
             }
 
             .screenshot__aside {
-                left: none;
-                right: 0;
-                transform: translate(240%, 7%);
+                left: unset;
+                right: -15%;
+
+                @include respond-to("large") {
+                    left: 0;
+                    right: none;
+                    transform: translate(-60%, 7%);
+                }
             }
         }
+
+        @include respond-to("large") {
+            flex-direction: column-reverse;
+            align-items: center;
+            padding: 3rem;
+        }
+
+        @include respond-to("tiny") {
+            padding: 3rem 1rem;
+        }
     }
-
-    // &__background {
-
-    // }
     
     &__text {
         width: 50%;
+
+        @include respond-to("huge") {
+            width: 45%;
+        }
+        
+        @include respond-to("large") {
+            width: 100%;
+        }
+    }
+
+    &__description {
+        line-height: 35px;
+        margin: 40px 0;
+    }
+
+    &__redirect {
+        color: $colorShojohi;
+        font-weight: 700;
+        border: 2px solid transparent;
+        transition: all 0.5s;
+
+        &:hover,
+        &:focus {
+            color: $colorKurotobi;
+            border-bottom: 2px solid $colorAkabeni;
+        }
     }
 
     &__screenshot {
         display: flex;
         flex-wrap: nowrap;
         justify-content: flex-end;
-        width: 45%;
-        // background-image: url(../assets/mooning.png);
-        // background-image: url(../assets/bedge_grunge.png);
-        background-size: 100vw;
+        align-items: flex-end;
+        width: 40%;
         overflow: visible;
+
+        @include respond-to("large") {
+            width: 50%;
+            margin-bottom: 2rem;
+            flex-direction: row-reverse;
+        }
+
+        @include respond-to("medium") {
+            width: 70%;
+        }
     }
 
     &__linkContainer {
         display: flex;
         flex-wrap: wrap;
+
+        @include respond-to("large") {
+            padding-top: 10px;
+        }
+    }
+
+    &__button {
+        padding: 0 20px;
+        margin-bottom: 10px;
+        margin-right: 20px;
+        height: 50px;
+        border-radius: 2px;
+        border: 1px solid rgba($color: $colorTobiiro, $alpha: 0.2);
+        box-shadow: 0px 0px 2px 2px rgba($color: $colorTobiiro, $alpha: 0.4);
+        background-color: rgba($color: $colorWhite, $alpha: 0.6);
+        color: rgba($color: $colorTobiiro, $alpha: 0.9);
+        text-align: center;
+        transition: all 1s;
+
+        &:hover,
+        &:focus-within {
+            background-color: rgba($color: $colorAkabeni, $alpha: 0.9);
+            color: $colorWhite;
+            text-shadow: 0px 0px 1px $colorWhite;
+            box-shadow: 0px 0px 2px 2px rgba($color: $colorAkabeni, $alpha: 0.9);
+            border: 1px solid transparent;
+        }
     }
 
     &__link {
-        padding: 0 10px;
-        margin-right: 10px;
-        height: 28px;
-        line-height: 28px;
-        border-radius: 2px;
-        background-color: $colorWhite;
-        text-align: center;
-        box-shadow: 0px 0px 2px 2px $colorWhite;
+        color: inherit;
+        outline: none;
+    }
 
-        // fix BEM later: __link to __item, and the a to __link
-        a {
-            color: inherit;
-        }
+    &__icon {
+        height: 32px;   
+    }
+
+    @include respond-to("tiny") {
+        padding: 3rem 0 1rem;
     }
 }
 
 .language {
     &__item {
         padding: 0 10px;
-        margin-right: 10px;
+        margin: 10px 10px 0 0;
         height: 28px;
         line-height: 28px;
         border-radius: 2px;
         text-align: center;
-        background-color: $colorOtan;
-        box-shadow: 0px 0px 2px 2px $colorOtan;
+        background-color: rgba($color: $colorOtan, $alpha: 0.8);
+        box-shadow: 0px 0px 2px 2px rgba($color: $colorOtan, $alpha: 0.8);
         color: $colorWhite;
     }
 
@@ -93,15 +175,13 @@
 
 .screenshot {
     &__border {
+        align-self: center;
         position: relative;
-        width: 80%;
-        height: 100%;
         border-radius: 5px;
     }
 
     &__image {
         width: 100%;
-        height: 100%;
         border: 5px solid $colorTobiiro;
         box-shadow: 0px 0px 3px 1px $colorShuiro;
         border-radius: 10px;
@@ -109,25 +189,14 @@
 
     &__aside {
         position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 35%;
-        height: 90%;
+        bottom: -20px;
+        left: -15%;
+        width: 30%;
         border-radius: 5px;
-        transform: translate(-60%, 7%);
         z-index: 1;
-    }
-    
-    &__mockup {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        z-index: 10;
     }
 
     &__mobile {
         width: 100%;
-        height: 100%;
-        padding: 30px 10px;
     }
 }
