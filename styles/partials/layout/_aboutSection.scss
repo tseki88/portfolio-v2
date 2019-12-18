@@ -62,6 +62,7 @@
             background-image: url(../assets/ricepaper.png);
             box-shadow: 0 0 30px 20px rgba(0,0,0,.2);
             padding: 3rem 2rem;
+            align-self: flex-start;
 
             @include respond-to("medium") {
                 margin: 3rem auto 0;
