@@ -263,11 +263,12 @@ h4 {
 
 .about__text {
   letter-spacing: 1px;
-  font-size: 1.1rem;
+  font-size: 1.12rem;
   line-height: 35px; }
 
 .about__text--accent {
   font-family: 'Nanum Brush Script', cursive;
+  padding-top: 1rem;
   font-size: 2rem;
   text-align: center; }
 
@@ -510,7 +511,8 @@ a {
     text-decoration: underline; }
   .about__container--text {
     -ms-flex-preferred-size: 50%;
-        flex-basis: 50%; }
+        flex-basis: 50%;
+    text-shadow: 0px 0px 1px #4c221b; }
     @media (max-width: 980px) {
       .about__container--text {
         width: 80%;
@@ -533,7 +535,7 @@ a {
         margin: 3rem auto 0; } }
     @media (max-width: 650px) {
       .about__container--skills {
-        margin: 0; } }
+        margin: 0 auto; } }
     @media (max-width: 480px) {
       .about__container--skills {
         min-width: unset;
@@ -696,8 +698,8 @@ a {
     background-color: rgba(245, 245, 245, 0.6);
     color: rgba(76, 34, 27, 0.9);
     text-align: center;
-    -webkit-transition: all 1s;
-    transition: all 1s; }
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s; }
     .portfolio__button:hover, .portfolio__button:focus-within {
       background-color: rgba(195, 39, 43, 0.9);
       color: #f5f5f5;
@@ -833,17 +835,15 @@ a {
         padding: 2rem;
         margin-left: auto;
         margin-right: auto;
-        width: 90%; } }
+        width: 100%; } }
     @media (max-width: 650px) {
       .contact__form {
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
                 justify-content: space-between;
-        margin: 0 auto;
-        width: 90%; } }
+        margin: 0 auto; } }
     @media (max-width: 480px) {
       .contact__form {
-        width: 100%;
         padding: 2rem 1rem 0; } }
 
 .social__container {
@@ -903,8 +903,8 @@ a {
 .social__icon {
   padding: 5px;
   border: 4px solid transparent;
-  -webkit-transition: all 1s;
-  transition: all 1s; }
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s; }
 
 .form__input, .form__textarea {
   background: none;

@@ -97,12 +97,13 @@ h4 {
 
     &__text {
         letter-spacing: 1px;
-        font-size: 1.1rem;
+        font-size: 1.12rem;
         line-height: 35px;
     }
 
     &__text--accent {
         font-family: 'Nanum Brush Script', cursive;
+        padding-top: 1rem;
         font-size: 2rem;
         text-align: center;
     }
