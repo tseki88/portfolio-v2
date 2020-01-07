@@ -4,9 +4,9 @@
     box-shadow: 0 0 30px 20px rgba(0,0,0,.2);
 
     &__image {
-        margin: 0 auto 2rem;
-        width: 380px;
-        height: 450px;
+        margin: 0 auto;
+        width: 350px;
+        height: 400px;
         box-shadow: 0 0 10px 3px rgba($color: $colorTobiiro, $alpha: 0.8);
         overflow: hidden;
 
@@ -43,10 +43,13 @@
         text-decoration: underline;
     }
 
+    &__textContainer {
+        padding: 1.8rem 0;
+    }
+
     &__container {
         &--text {
             flex-basis: 50%;
-            text-shadow: 0px 0px 1px $colorTobiiro;
 
             @include respond-to("medium") {
                 width: 80%;
@@ -106,7 +109,7 @@
     
     &__icon {
         color: $colorAkabeni;
-        text-shadow: 0px 0px 3px $colorAkabeni;
+        text-shadow: 0px 0px 2px $colorAkabeni;
         transition: all 1s;
     }
 }
