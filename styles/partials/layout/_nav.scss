@@ -6,8 +6,8 @@
         flex-wrap: nowrap;
         justify-content: flex-end;
 
-        @include respond-to("tiny") {
-            justify-content: space-around;
+        @include respond-to("medium") {
+            justify-content: center;
         }
     }
 
@@ -16,6 +16,10 @@
 
         @include respond-to("tiny") {
             margin-left: 10px;
+        }
+
+        &:first-of-type {
+            margin-left: 0px;
         }
     }
 

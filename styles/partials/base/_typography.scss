@@ -22,6 +22,10 @@ h1 {
     text-align: center;
     color: $colorKurotobi;
 
+    @include respond-to("small") {
+        font-size: 3rem;
+    }
+
     @include respond-to("tiny") {
         font-size: 2rem;
     }

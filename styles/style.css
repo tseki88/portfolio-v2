@@ -2796,6 +2796,9 @@ h1 {
   font-weight: 500;
   text-align: center;
   color: #351e1c; }
+  @media (max-width: 650px) {
+    h1 {
+      font-size: 3rem; } }
   @media (max-width: 480px) {
     h1 {
       font-size: 2rem; } }
@@ -3019,15 +3022,18 @@ a {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end; }
-    @media (max-width: 480px) {
+    @media (max-width: 980px) {
       .nav__list {
-        -ms-flex-pack: distribute;
-            justify-content: space-around; } }
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; } }
   .nav__item {
     margin-left: 20px; }
     @media (max-width: 480px) {
       .nav__item {
         margin-left: 10px; } }
+    .nav__item:first-of-type {
+      margin-left: 0px; }
   .nav__link {
     position: relative;
     color: #4c221b;
