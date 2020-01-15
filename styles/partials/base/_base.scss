@@ -9,6 +9,11 @@ body {
     background: url(../assets/dust_scratches.png);
 }
 
+body,
+section {
+    overflow-x: hidden;
+}
+
 ul {
     list-style: none;
     padding: 0;
