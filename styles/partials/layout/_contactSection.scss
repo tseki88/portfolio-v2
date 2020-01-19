@@ -146,7 +146,11 @@
         border: none;
         border-bottom: 1px dashed $colorTobiiro;
         color: $colorKurotobi;
-        text-shadow: 0px 0px 1px $colorTobiiro;
+
+        &::placeholder {
+            color: $colorBlack;
+            font-weight: 600;
+        }
 
         &:focus {
             outline: 3px solid rgba($color: $colorAkabeni, $alpha: 0.6);

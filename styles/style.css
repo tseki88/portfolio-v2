@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Nanum+Brush+Script&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700&display=swap");
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -2782,7 +2781,7 @@ html,
 body,
 input {
   font-size: 20px;
-  font-family: 'Nanum Gothic', sans-serif; }
+  font-family: sans-serif; }
 
 h1,
 h2,
@@ -2809,7 +2808,7 @@ h2 {
   letter-spacing: 0px;
   line-height: 70px;
   text-transform: uppercase;
-  text-shadow: 0px 0px 2px #ff454a; }
+  text-shadow: 0px 0px 1px #ff454a; }
   h2::before {
     content: "<  "; }
   h2::after {
@@ -3040,8 +3039,7 @@ a {
       margin-left: 0px; }
   .nav__link {
     position: relative;
-    color: #4c221b;
-    text-shadow: 0px 0px 1px #ff454a; }
+    color: #4c221b; }
     .nav__link::after {
       content: " ";
       position: absolute;
@@ -3159,7 +3157,7 @@ a {
 
 .skill__icon {
   color: #c3272b;
-  text-shadow: 0px 0px 2px #c3272b;
+  text-shadow: 0px 0px 1px #c3272b;
   -webkit-transition: all 1s;
   transition: all 1s; }
 
@@ -3321,9 +3319,9 @@ a {
   line-height: 28px;
   border-radius: 2px;
   text-align: center;
-  background-color: rgba(255, 78, 32, 0.8);
-  -webkit-box-shadow: 0px 0px 2px 2px rgba(255, 78, 32, 0.8);
-          box-shadow: 0px 0px 2px 2px rgba(255, 78, 32, 0.8);
+  background-color: rgba(255, 78, 32, 0.9);
+  -webkit-box-shadow: 0px 0px 1px 2px rgba(255, 78, 32, 0.8);
+          box-shadow: 0px 0px 1px 2px rgba(255, 78, 32, 0.8);
   color: #f5f5f5; }
 
 .language__container {
@@ -3510,8 +3508,22 @@ a {
   padding: 10px 15px;
   border: none;
   border-bottom: 1px dashed #4c221b;
-  color: #351e1c;
-  text-shadow: 0px 0px 1px #4c221b; }
+  color: #351e1c; }
+  .form__input::-webkit-input-placeholder, .form__textarea::-webkit-input-placeholder {
+    color: #000000;
+    font-weight: 600; }
+  .form__input::-moz-placeholder, .form__textarea::-moz-placeholder {
+    color: #000000;
+    font-weight: 600; }
+  .form__input:-ms-input-placeholder, .form__textarea:-ms-input-placeholder {
+    color: #000000;
+    font-weight: 600; }
+  .form__input::-ms-input-placeholder, .form__textarea::-ms-input-placeholder {
+    color: #000000;
+    font-weight: 600; }
+  .form__input::placeholder, .form__textarea::placeholder {
+    color: #000000;
+    font-weight: 600; }
   .form__input:focus, .form__textarea:focus {
     outline: 3px solid rgba(195, 39, 43, 0.6); }
 
