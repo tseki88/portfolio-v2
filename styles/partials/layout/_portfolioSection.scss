@@ -74,6 +74,7 @@
     &__description {
         line-height: 35px;
         margin: 40px 0;
+        font-weight: 600;
     }
 
     &__redirect {
@@ -105,6 +106,10 @@
 
         @include respond-to("medium") {
             width: 70%;
+        }
+
+        @include respond-to("tiny") {
+            margin-bottom: 20px;
         }
     }
 

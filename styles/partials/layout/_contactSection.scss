@@ -3,6 +3,10 @@
     background-image: url(../assets/ricepaper.png);
     background-repeat: repeat;
 
+    @include respond-to("tiny") {
+        padding-top: 0;
+    }
+
     &__container {
         display: flex;
         flex-wrap: nowrap;

@@ -2777,11 +2777,17 @@ html {
     -webkit-animation-iteration-count: 1 !important;
     animation-iteration-count: 1 !important; } }
 
+@font-face {
+  font-family: 'gillsans_lightregular';
+  src: url("../font/gillsans-light-webfont.woff2") format("woff2"), url("../font/gillsans-light-webfont.woff") format("woff"), url("../font/ufonts.com_gillsans-light.ttf");
+  font-weight: normal;
+  font-style: normal; }
+
 html,
 body,
 input {
-  font-size: 20px;
-  font-family: sans-serif; }
+  font-size: 22px;
+  font-family: 'gillsans_lightregular', sans-serif; }
 
 h1,
 h2,
@@ -2838,6 +2844,7 @@ h4 {
 
 .nav__link {
   font-size: 1.2rem;
+  font-weight: 600;
   line-height: 70px;
   letter-spacing: 1px; }
   @media (max-width: 480px) {
@@ -2852,8 +2859,12 @@ h4 {
       font-size: 1.8rem; } }
 
 .about__text {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
   line-height: 32px; }
+  @media (max-width: 480px) {
+    .about__text {
+      font-size: 1rem; } }
 
 .about__text--accent {
   font-family: 'Nanum Brush Script', cursive;
@@ -2868,7 +2879,7 @@ h4 {
   padding-bottom: 0.5rem; }
   @media (max-width: 480px) {
     .portfolio__title {
-      font-size: 2.2rem; } }
+      font-size: 2rem; } }
 
 .portfolio__description {
   font-size: 1.1rem;
@@ -3030,6 +3041,10 @@ a {
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center; } }
+    @media (max-width: 480px) {
+      .nav__list {
+        -ms-flex-pack: distribute;
+            justify-content: space-around; } }
   .nav__item {
     margin-left: 20px; }
     @media (max-width: 480px) {
@@ -3073,12 +3088,17 @@ a {
     overflow: hidden; }
     @media (max-width: 480px) {
       .about__image {
-        width: 80%;
-        height: unset; } }
+        width: 250px;
+        height: 250px;
+        border-radius: 50%; } }
   .about__photo {
     width: 100%;
     -webkit-transform: scale(1.1);
             transform: scale(1.1); }
+    @media (max-width: 480px) {
+      .about__photo {
+        -webkit-transform: scale(1.3);
+                transform: scale(1.3); } }
   .about__section {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3135,7 +3155,7 @@ a {
     @media (max-width: 480px) {
       .about__container--skills {
         min-width: unset;
-        padding: 1rem 0.3rem; } }
+        padding: 1rem 1.2rem; } }
 
 .skill__heading {
   margin: 0.8rem 0;
@@ -3238,7 +3258,8 @@ a {
         width: 100%; } }
   .portfolio__description {
     line-height: 35px;
-    margin: 40px 0; }
+    margin: 40px 0;
+    font-weight: 600; }
   .portfolio__redirect {
     color: #dc3023;
     font-weight: 700;
@@ -3273,6 +3294,9 @@ a {
     @media (max-width: 980px) {
       .portfolio__screenshot {
         width: 70%; } }
+    @media (max-width: 480px) {
+      .portfolio__screenshot {
+        margin-bottom: 20px; } }
   .portfolio__linkContainer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3359,6 +3383,9 @@ a {
   padding: 3rem 0;
   background-image: url(../assets/ricepaper.png);
   background-repeat: repeat; }
+  @media (max-width: 480px) {
+    .contact {
+      padding-top: 0; } }
   .contact__container {
     display: -webkit-box;
     display: -ms-flexbox;

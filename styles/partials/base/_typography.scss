@@ -1,11 +1,19 @@
+@font-face {
+    font-family: 'gillsans_lightregular';
+    src: url('../font/gillsans-light-webfont.woff2') format('woff2'),
+    url('../font/gillsans-light-webfont.woff') format('woff'),
+    url('../font/ufonts.com_gillsans-light.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
 @import url('https://fonts.googleapis.com/css?family=Nanum+Brush+Script&display=swap');
 
 
 html,
 body,
 input {
-    font-size: 20px;
-    font-family: sans-serif;
+    font-size: 22px;
+    font-family: 'gillsans_lightregular', sans-serif;
 }
 
 h1,
@@ -80,6 +88,7 @@ h4 {
 
 .nav__link {
     font-size: 1.2rem;
+    font-weight: 600;
     line-height: 70px;
     letter-spacing: 1px;
 
@@ -99,8 +108,13 @@ h4 {
     }
 
     &__text {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
+        font-weight: 600;
         line-height: 32px;
+
+        @include respond-to("tiny") {
+            font-size: 1rem;
+        }
     }
 
     &__text--accent {
@@ -119,7 +133,7 @@ h4 {
         padding-bottom: 0.5rem;
 
         @include respond-to("tiny") {
-            font-size: 2.2rem;
+            font-size: 2rem;
         }
     }
 
