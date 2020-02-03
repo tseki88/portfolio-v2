@@ -1,11 +1,12 @@
 .footer {
     margin: 0;
-    padding: 10px 0;
-    background-color: #8C4736;
-    color: $colorWhite;
+    padding: 32px 0;
+    // background-color: #8C4736;
+    background-color: rgba($color: $colorTobiiro, $alpha: 0.9);
     
     &__copy {
-        text-shadow: 0px 0px 5px $colorTobiiro;
+        // text-shadow: 0px 0px 5px $colorTobiiro;
+        color: white;
         margin: 0;
     }
 }

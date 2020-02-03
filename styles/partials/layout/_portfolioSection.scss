@@ -15,9 +15,9 @@
         flex-wrap: nowrap;
         justify-content: space-between;
         margin: 80px 0;
-        padding: 8rem 3rem;
-        background-image: url(../assets/bedge_grunge.png);
-        box-shadow: 0 0 30px 20px rgba(0,0,0,.1);
+        padding: 2rem 0;
+        // background-image: url(../assets/bedge_grunge.png);
+        // box-shadow: 0 0 30px 20px rgba(0,0,0,.1);
     
         &:nth-of-type(2n + 1) {
             flex-direction: row-reverse;
@@ -73,8 +73,7 @@
 
     &__description {
         line-height: 35px;
-        margin: 40px 0;
-        font-weight: 600;
+        margin: 20px 0;
     }
 
     &__redirect {
@@ -94,8 +93,8 @@
         display: flex;
         flex-wrap: nowrap;
         justify-content: flex-end;
-        align-items: flex-end;
-        width: 40%;
+        align-items: flex-start;
+        width: 35%;
         overflow: visible;
 
         @include respond-to("large") {
@@ -123,13 +122,13 @@
     }
 
     &__button {
-        padding: 0 20px;
-        margin-bottom: 10px;
+        padding: 0 10px;
+        // margin-bottom: 10px;
         margin-right: 20px;
-        height: 50px;
+        // height: 28px;
         border-radius: 2px;
-        border: 1px solid rgba($color: $colorTobiiro, $alpha: 0.2);
-        box-shadow: 0px 0px 2px 2px rgba($color: $colorTobiiro, $alpha: 0.4);
+        border: 1px solid $colorTobiiro;
+        // box-shadow: 0px 0px 2px 2px rgba($color: $colorTobiiro, $alpha: 0.4);
         background-color: rgba($color: $colorWhite, $alpha: 0.6);
         color: rgba($color: $colorTobiiro, $alpha: 0.9);
         text-align: center;
@@ -137,10 +136,11 @@
 
         &:hover,
         &:focus-within {
-            background-color: rgba($color: $colorAkabeni, $alpha: 0.9);
+            // background-color: rgba($color: $colorAkabeni, $alpha: 0.9);
+            background-color: rgba($color: $colorTobiiro, $alpha: 0.9);
             color: $colorWhite;
-            text-shadow: 0px 0px 1px $colorWhite;
-            box-shadow: 0px 0px 2px 2px rgba($color: $colorAkabeni, $alpha: 0.9);
+            // text-shadow: 0px 0px 1px $colorWhite;
+            // box-shadow: 0px 0px 2px 2px rgba($color: $colorAkabeni, $alpha: 0.9);
             border: 1px solid transparent;
         }
     }
@@ -161,14 +161,15 @@
 
 .language {
     &__item {
-        padding: 0 10px;
-        margin: 10px 10px 0 0;
+        padding: 0 8px;
+        margin: 0 6px 0 0;
         height: 28px;
         line-height: 28px;
         border-radius: 2px;
         text-align: center;
-        background-color: rgba($color: $colorOtan, $alpha: 0.9);
-        box-shadow: 0px 0px 1px 2px rgba($color: $colorOtan, $alpha: 0.8);
+        // background-color: rgba($color: $colorOtan, $alpha: 0.7);
+        background-color: grey;
+        // box-shadow: 0px 0px 1px 2px rgba($color: $colorOtan, $alpha: 0.8);
         color: $colorWhite;
     }
 
@@ -180,7 +181,7 @@
 
 .screenshot {
     &__border {
-        align-self: center;
+        // align-self: center;
         position: relative;
         border-radius: 5px;
     }

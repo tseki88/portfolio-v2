@@ -35,14 +35,14 @@
         &__container {
             position: absolute;
             top: 50%;
-            left: 50%;
-            width: 100%;
-            transform: translate(-50%, -50%);
-            text-shadow: 0px 0px 2px $colorShuiro;
+            // left: 50%;
+            // width: 100%;
+            transform: translateY(-50%);
+            // text-shadow: 0px 0px 2px $colorShuiro;
         }
 
         &__main {
-            margin-bottom: 0;
+            margin: 0 auto;
 
             &--accent {
                 color: $colorShuiro;
@@ -53,5 +53,105 @@
         &__sub {
             margin-top: 0;
         }
+    }
+}
+
+.social {
+    &__fixed {
+        width: 40px;
+        position: fixed;
+        bottom: 0;
+        z-index: 10;
+        
+        &--left {
+            left: 40px;
+            right: auto;
+        }
+
+        &--right {
+            right: 40px;
+            left: auto;
+        }
+    }
+}
+
+
+.social {
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &::after {
+            content: "";
+            width: 2px;
+            height: 90px;
+            // background-color: $colorAkabeni;
+            background-color: $colorKurotobi;
+            margin: 0 auto;
+        }
+    }
+
+    &__item {
+        // margin: 2.6rem auto;
+        text-align: center;
+        transition: all 0.5s;
+        
+        &:last-of-type {
+            margin-bottom: 20px;
+        }
+
+        &:hover,
+        &:focus {
+            transform: translateY(-3px) scale(1.1);
+            color: $colorAkabeni;
+            outline: none;
+        }
+
+        &--email {
+            writing-mode: vertical-lr;
+            padding: 10px;
+            // color: $colorAkabeni;
+            color: $colorKurotobi;
+            // border: 2px solid transparent;
+
+            // &:hover,
+            // &:focus {
+            //     border-radius: 5px;
+            //     border: 2px solid $colorAkabeni;
+            //     box-shadow: 0 0 1px 1px $colorAkabeni;
+            // }
+        }
+
+        @include respond-to("small") {
+            margin: auto;
+        }
+    }
+    
+    &__link {
+        // color: $colorAkabeni;
+        color: $colorKurotobi;
+        
+
+        &:focus {
+            outline: none;
+        }
+
+        &:hover .social__icon,
+        &:focus .social__icon {
+            color: $colorAkabeni;
+            // border-radius: 5px;
+            // border: 2px solid $colorAkabeni;
+            // box-shadow: 0 0 1px 1px $colorAkabeni;
+            // text-shadow: 0 0 3px $colorAkabeni;
+            transform: translateY(-3px) scale(1.1);
+        }
+    }
+    
+    &__icon {
+        padding: 10px;
+        // border: 2px solid transparent;
+        transition: all 0.5s;
     }
 }

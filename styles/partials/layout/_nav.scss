@@ -1,10 +1,24 @@
 .nav {
-    padding: 20px 0;
-
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 0 50px;
+    height: 70px;
+    // border-bottom: 1px solid white;
+    position: fixed;
+    z-index: 10;
+    // background: url(../assets/dust_scratches.png);
+    // background-color: $colorTobiiro;
+    background-color: rgba($color: $colorTobiiro, $alpha: 0.9);
+    // box-shadow: 0 0 5px 2px $colorTobiiro;
+    
     &__list {
         display: flex;
         flex-wrap: nowrap;
-        justify-content: flex-end;
+        // justify-content: flex-end;
+        align-items: center;
+        height: 40px;
 
         @include respond-to("medium") {
             justify-content: center;
@@ -29,7 +43,8 @@
 
     &__link {
         position: relative;
-        color: $colorTobiiro;
+        // color: $colorTobiiro;
+        color: white;
 
         &::after {
             content: " ";
@@ -47,7 +62,8 @@
             color: $colorAkabeni;
             
             &::after {
-                border-bottom: 2px solid $colorTobiiro;
+                // border-bottom: 2px solid $colorTobiiro;
+                border-bottom: 2px solid white;
                 transform: scaleX(1);
                 bottom: -1px;
             }

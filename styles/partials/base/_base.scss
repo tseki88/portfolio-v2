@@ -25,7 +25,7 @@ a {
 }
 
 .skipLink a {
-    background-color: $colorShojohi;
+    background-color: $colorAkabeni;
     color: $colorWhite;
     font-weight: 700;
     position: absolute;
@@ -37,18 +37,21 @@ a {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        border: 3px solid $colorTobiiro;
+        border: 3px solid black;
+        z-index: 15;
+        outline: none;
     }
 }
 
 .wrapper {
-    width: 80%;
-    max-width: 1280px;
+    width: 100%;
+    max-width: 1600px;
     margin: 0 auto;
+    padding: 0 150px;
 
-    @include respond-to("huge") {
-        width: 90%;
-    }
+    // @include respond-to("huge") {
+    //     width: 90%;
+    // }
 }
 
 .mobileHide {

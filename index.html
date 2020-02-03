@@ -15,20 +15,34 @@
     <!-- Header Section -->
     <header id="home" class="header">
         <div class="skipLink"><a href="#about">Skip to main content</a></div>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="#home">Home</a></li>
+                <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
+                <li class="nav__item"><a class="nav__link" href="#portfolio">Portfolio</a></li>
+                <li class="nav__item"><a class="nav__link" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
         <div class="wrapper">
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a class="nav__link" href="#home">Home</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#portfolio">Portfolio</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#contact">Contact</a></li>
-                </ul>
-            </nav>
             <div class="header__heading__container">
-                <h1 class="header__heading__main animated fadeIn delay-1s">Hello, I'm  <span class="header__heading__main--accent">Steve Seki</span>.</h1>
+                <p class="header__heading__pre">Hi, my name is</p>
+                <h1 class="header__heading__main animated fadeIn delay-1s">Teruhisa Steve Seki</h1>
                 <h2 class="header__heading__sub animated fadeInUp slower">Front-End Developer</h2>
             </div>
-            <div class="header__bird animated fadeIn delay-2s slow"><img src="./assets/bird.png" alt="drawing of bird on the header section"></div>
+            <!-- <div class="header__bird animated fadeIn delay-2s slow"><img src="./assets/bird.png" alt="drawing of bird on the header section"></div> -->
+            <div class="social__fixed social__fixed--left">
+                <ul class="social__container">
+                    <!-- change icons to SVGs, as adblockers will block view -->
+                    <li class="social__item"><a class="social__link" aria-label="This link will open a new tab which directs you to Steve Seki's GitHub page." href="https://github.com/tseki88" target="blank"><i class="social__icon fab fa-github"></i></a></li>
+                    <li class="social__item"><a class="social__link" aria-label="This link will open a new tab which directs you to Steve Seki's twitter page." href="https://twitter.com/steve_seki" target="blank"><i class="social__icon fab fa-twitter"></i></a></li>
+                    <li class="social__item"><a class="social__link" aria-label="This link will open a new tab which directs you to Steve Seki's linkedIn page." href="https://www.linkedin.com/in/sekisteve/" target="blank"><i class="social__icon fab fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+            <div class="social__fixed social__fixed--right">
+                <div class="social__container">
+                    <a href="mailto:seki.teruhisa@gmail.com" class="social__item social__item--email">seki.teruhisa@gmail.com</a>
+                </div>
+            </div>
         </div>
     </header>
     <!-- About Section -->
@@ -167,11 +181,6 @@
             <h2 class="contact__heading">Contact</h2>
             <div class="contact__container">
                 <div class="contact__subcontainer">
-                    <ul class="social__container" data-aos="fade-right" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
-                        <li class="social__item"><a class="social__link" aria-label="This link will open a new tab which directs you to Steve Seki's GitHub page." href="https://github.com/tseki88" target="blank"><i class="social__icon fab fa-github"></i></a></li>
-                        <li class="social__item"><a class="social__link" aria-label="This link will open a new tab which directs you to Steve Seki's twitter page." href="https://twitter.com/steve_seki" target="blank"><i class="social__icon fab fa-twitter"></i></a></li>
-                        <li class="social__item"><a class="social__link" aria-label="This link will open a new tab which directs you to Steve Seki's linkedIn page." href="https://www.linkedin.com/in/sekisteve/" target="blank"><i class="social__icon fab fa-linkedin"></i></a></li>
-                    </ul>
                     <form class="contact__form" id="contact__form" action="https://formspree.io/xknowaya" method="POST" autocomplete="off">
                         <label class="form__label" for="name"></label>
                         <input class="form__input" type="text" name="name" id="name" placeholder="Name" required>
@@ -191,7 +200,7 @@
     <!-- Footer Section -->
     <footer class="footer">
         <div class="wrapper">
-            <p class="footer__copy"><small>Designed and Built by Steve Seki 2020</small></p>
+            <p class="footer__copy"><small>Teruhisa Steve Seki &copy; 2020</small></p>
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
