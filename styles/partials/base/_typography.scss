@@ -29,7 +29,7 @@ h1 {
     color: $colorKurotobi;
 
     @include respond-to("small") {
-        font-size: 2.6rem;
+        font-size: 2.4rem;
     }
 }
 
@@ -75,6 +75,10 @@ h4 {
 
 .nav__link {
     outline: none;
+
+    @include respond-to("small") {
+        font-size: 0.9rem;
+    }
 }
 
 .about {
@@ -109,7 +113,6 @@ h4 {
 
 .skill {
     &__heading {
-        // font-size: 1.1rem;
         letter-spacing: 1px;
     }
 

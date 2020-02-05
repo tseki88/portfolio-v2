@@ -15,6 +15,10 @@
 
     &__email {
         text-align: center;
+
+        a:hover {
+            color: $colorAkabeni;
+        }
     }
 
 

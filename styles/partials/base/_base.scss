@@ -55,6 +55,10 @@ a {
     @include respond-to("medium") {
         width: 90%;
     }
+
+    @include respond-to("small") {
+        width: 100%;
+    }
 }
 
 .mobileHide {

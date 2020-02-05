@@ -4,10 +4,6 @@
 
     &__title {
         margin: 0 0 15px;
-
-        // @include respond-to("large") {
-        //     margin: 2rem 0 1rem;
-        // }
     }
 
     &__item {
@@ -41,7 +37,7 @@
                 @include respond-to("large") {
                     left: 0;
                     right: none;
-                    transform: translate(-60%, 7%);
+                    transform: translate(-50%, 0%);
                 }
             }
         }
@@ -53,6 +49,7 @@
         }
 
         @include respond-to("small") {
+            margin-bottom: 20px;
             padding: 3rem 1rem;
         }
     }
@@ -63,6 +60,10 @@
         @include respond-to("large") {
             width: 80%;
             margin-top: 1rem;
+        }
+
+        @include respond-to("small") {
+            width: 100%;
         }
     }
 

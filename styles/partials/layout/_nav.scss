@@ -24,8 +24,7 @@
         height: 40px;
 
         @include respond-to("small") {
-            width: 100%;
-            justify-content: space-between;
+            justify-content: space-around;
         }
     }
 
@@ -37,9 +36,7 @@
         }
 
         @include respond-to("small") {
-            width: 25%;
             text-align: center;
-            // margin-left: 0;
         }
     }
 

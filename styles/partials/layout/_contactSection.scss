@@ -40,7 +40,11 @@
     
     &__input {
         width: 48%;
-      // flex: 1 1 50%;
+
+        @include respond-to("small") {
+            width: 98%;
+            margin: 0 auto;
+        }
     }
 
     &__textarea {

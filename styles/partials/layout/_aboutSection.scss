@@ -102,16 +102,12 @@
     &__item {
         flex: 1 0 40%;
         margin-bottom: 20px;
-        // display: flex;
-        // align-items: center;
-        // width: 35%;
     }
 }
 
 .skill {
     &__heading {
         margin: 30px 5px 20px 0;
-        // margin-right: 5px;
         text-align: center;
         text-decoration: underline;
         
@@ -151,9 +147,6 @@
         }
         
         &:last-of-type {
-
-            // padding-right: 5px;
-
             &::after {
                 content: "";
             }
