@@ -2,52 +2,15 @@
     position: relative;
     height: 100vh;
 
-    &__bird {
-        position: absolute;
-        bottom: -100px;
-        left: -50px;
-        width: 40%;
-        max-width: 700px;
-
-        @include respond-to("landscape") {
-            width: 40%;
-        }
-
-        @include respond-to("medium") {
-            width: 40%;
-        }
-
-        @include respond-to("small") {
-            bottom: 0;
-        }
-
-        @include respond-to("tiny") {
-            left: -20px;
-            width: 60%;
-        }
-
-        img {
-            width: 100%;
-        }
-    }
-
     &__heading {
         &__container {
             position: absolute;
             top: 50%;
-            // left: 50%;
-            // width: 100%;
             transform: translateY(-50%);
-            // text-shadow: 0px 0px 2px $colorShuiro;
         }
 
         &__main {
             margin: 0 auto;
-
-            &--accent {
-                color: $colorShuiro;
-                text-shadow: 0px 0px 2px $colorShuiro;
-            }
         }
 
         &__sub {
@@ -62,6 +25,10 @@
         position: fixed;
         bottom: 0;
         z-index: 10;
+
+        @include respond-to("medium") {
+            display: none;
+        }
         
         &--left {
             left: 40px;
@@ -87,71 +54,108 @@
             content: "";
             width: 2px;
             height: 90px;
-            // background-color: $colorAkabeni;
             background-color: $colorKurotobi;
             margin: 0 auto;
         }
     }
 
     &__item {
-        // margin: 2.6rem auto;
         text-align: center;
         transition: all 0.5s;
-        
+
         &:last-of-type {
             margin-bottom: 20px;
         }
 
-        &:hover,
-        &:focus {
-            transform: translateY(-3px) scale(1.1);
-            color: $colorAkabeni;
-            outline: none;
-        }
-
         &--email {
             writing-mode: vertical-lr;
-            padding: 10px;
-            // color: $colorAkabeni;
+            padding: 10px 10px 0;
             color: $colorKurotobi;
-            // border: 2px solid transparent;
-
-            // &:hover,
-            // &:focus {
-            //     border-radius: 5px;
-            //     border: 2px solid $colorAkabeni;
-            //     box-shadow: 0 0 1px 1px $colorAkabeni;
-            // }
-        }
-
-        @include respond-to("small") {
-            margin: auto;
+            
+            &::before {
+                content: "[";
+                margin-bottom: 2px;
+                transform: translateY(10px);
+            }
+            
+            &::after {
+                content: "]";
+                margin-top: 2px;
+                transform: translateY(-10px);
+            }
+            
+            &::before,
+            &::after {
+                opacity: 0;
+                color: $colorKurotobi;
+                display: inline-block;
+                transition: all 0.5s;
+            }
+            
+            &:focus,
+            &:hover {
+                color: $colorAkabeni;
+                outline: none;
+                
+                .social__icon {
+                    color: $colorAkabeni;
+                }
+    
+                &::before,
+                &::after {
+                    transform: scaleX(1.3) translate(0);
+                    opacity: 1;
+                }
+    
+            }
         }
     }
     
     &__link {
-        // color: $colorAkabeni;
         color: $colorKurotobi;
-        
+        display: flex;
+        align-items: center;
 
         &:focus {
             outline: none;
         }
 
-        &:hover .social__icon,
-        &:focus .social__icon {
-            color: $colorAkabeni;
-            // border-radius: 5px;
-            // border: 2px solid $colorAkabeni;
-            // box-shadow: 0 0 1px 1px $colorAkabeni;
-            // text-shadow: 0 0 3px $colorAkabeni;
-            transform: translateY(-3px) scale(1.1);
+        &::before {
+            content: "[";
+            margin-right: 2px;
+            transform: translateX(10px);
+        }
+        
+        &::after {
+            content: "]";
+            margin-left: 2px;
+            transform: translateX(-10px);
+        }
+        
+        &::before,
+        &::after {
+            opacity: 0;
+            display: inline-block;
+            transition: all 0.5s;
+        }
+        
+        &:focus,
+        &:hover {
+            
+            .social__icon {
+                color: $colorAkabeni;
+            }
+
+            &::before,
+            &::after {
+                transform: scaleY(1.5) translate(0);
+                opacity: 1;
+            }
+
         }
     }
     
     &__icon {
         padding: 10px;
-        // border: 2px solid transparent;
-        transition: all 0.5s;
     }
 }

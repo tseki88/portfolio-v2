@@ -29,7 +29,6 @@
                 <h1 class="header__heading__main animated fadeIn delay-1s">Teruhisa Steve Seki</h1>
                 <h2 class="header__heading__sub animated fadeInUp slower">Front-End Developer</h2>
             </div>
-            <!-- <div class="header__bird animated fadeIn delay-2s slow"><img src="./assets/bird.png" alt="drawing of bird on the header section"></div> -->
             <div class="social__fixed social__fixed--left">
                 <ul class="social__container">
                     <!-- change icons to SVGs, as adblockers will block view -->
@@ -48,18 +47,21 @@
     <!-- About Section -->
     <section id="about" class="about" >
         <div class="about__section wrapper">
-            <h2 class="about__heading">About</h2>
-            <div class="about__container about__container--text" data-aos="fade-right" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
+            <h2 class="about__heading">About Me</h2>
+            <div class="about__container about__container--photo">
                 <div class="about__image">
                     <img class="about__photo" src="./assets/2019-fall-Steve-Seki-3(1).jpg" alt="profile photo of Steve Seki.">
                 </div>
+            </div>
+            <div class="about__container about__container--text">
                 <div class="about__textContainer">
-                    <p class="about__text">I'm a front-end developer based in Toronto. I come from a hospitality and retail management background, with a focus on process improvement and performance management.</p>
-                    <p class="about__text">I love problem solving and working with complex ideas, as such you will likely find me playing content-heavy board games on my free time. I also enjoy bouldering, table tennis and snowboarding.</p> 
+                    <p class="about__text">I'm a Front-End Developer based in Toronto. I enjoy developing websites and web apps that provide a great user experience.</p> 
+                    <p class="about__text">Prior to programming, I come from a background in operations management where I developed strengths in collaboration and strategic problem solving.</p>
+                    <p class="about__text">Outside of coding I enjoy playing content-heavy board games, recreational bouldering, table tennis and snowboarding.</p> 
                 </div>
             </div>
-            <div class="about__container about__container--skills" data-aos="fade-left" data-aos-duration="800" data-aos-anchor-placement="center-bottom">
-                <h3 class="about__subheading" >Tool Kit</h3>
+            <div class="about__toolkit">
+                <h3 class="about__subheading" >Current Tool Kit</h3>
                 <ul class="category__list">
                     <li class="category__item">
                         <h4 class="skill__heading">Markup & Styling</h4>
@@ -74,6 +76,7 @@
                         <ul class="skill__list">
                             <li class="skill__item"><i class="skill__icon devicon-javascript-plain" aria-label="javascript icon"></i></li>
                             <li class="skill__item"><i class="skill__icon devicon-jquery-plain" aria-label="jquery library icon"></i></li>
+                            <li class="skill__item"><i class="skill__icon devicon-typescript-plain" aria-label="typescript icon"></i></li>
                             <li class="skill__item"><i class="skill__icon devicon-react-original" aria-label="react framework icon"></i></li>
                         </ul>
                     </li>
@@ -86,7 +89,7 @@
                         </ul>
                     </li>                    
                     <li class="category__item">
-                        <h4 class="skill__heading">Interested in Learning</h4>
+                        <h4 class="skill__heading">Learning</h4>
                         <ul class="skill__list">
                             <li class="skill__item"><i class="skill__icon devicon-nodejs-plain" aria-label="node js icon"></i></li>
                         </ul>
@@ -134,7 +137,7 @@
                             <li class="language__item">Mob Programming</li>
                             <li class="language__item">REST API</li>
                         </ul>
-                        <p class="portfolio__description">An agency style group project. Client proposal - Black Jack game with a pokemon theme, play against another player or 2 computers. Built together with my amazing group <a class="portfolio__redirect" href="http://www.emmafattori.com/" aria-label="This link will direct you to Emma Fattori's portfolio page." target="blank">Emma Fattori</a>, <a class="portfolio__redirect" href="https://juancodes.com/" aria-label="This link will direct you to Juan Acaiturri" target="blank">Juan Acaiturri</a> and Howard Chen.</p>
+                        <p class="portfolio__description">An agency style group project. Built together with my amazing group <a class="portfolio__redirect" href="http://www.emmafattori.com/" aria-label="This link will direct you to Emma Fattori's portfolio page." target="blank">Emma Fattori</a>, <a class="portfolio__redirect" href="https://juancodes.com/" aria-label="This link will direct you to Juan Acaiturri" target="blank">Juan Acaiturri</a> and Howard Chen.</p>
                         <ul class="portfolio__linkContainer">
                             <li class="portfolio__button"><a class="portfolio__link" href="https://github.com/pokemonBlackJack/pokemonBlackJack" target="blank" aria-label="This link will open a new tab which directs you to the project's github repository page."><i class="portfolio__icon fab fa-github"></i> GitHub</a></li>
                             <li class="portfolio__button"><a class="portfolio__link" href="https://pokemonblackjack.github.io/pokemonBlackJack" target="blank" aria-label="This link will open a new tab which directs you to the project's live page."><i class="portfolio__icon fas fa-external-link-square-alt"></i> Live Project</a></li>
@@ -157,7 +160,7 @@
                             <li class="language__item">Firebase</li>
                             <li class="language__item">Sass</li>
                         </ul>
-                        <p class="portfolio__description">Board game fans rejoice! An all in one tool kit for different components based on you and your friends needs. Currently comes with a score card, timer and stop watch. Stay tuned for more additions to come!</p>
+                        <p class="portfolio__description">An all in one tool kit for different components based on you and your friends needs. Currently comes with a score card, timer and stop watch. Stay tuned for more additions to come!</p>
                         <ul class="portfolio__linkContainer">
                             <li class="portfolio__button"><a class="portfolio__link" href="https://github.com/tseki88/steveSekiProjectFive" target="blank" aria-label="This link will open a new tab which directs you to the project's github repository page."><i class="portfolio__icon fab fa-github"></i> GitHub</a></li>
                             <li class="portfolio__button"><a class="portfolio__link" href="https://tseki88.github.io/steveSekiProjectFive" target="blank" aria-label="This link will open a new tab which directs you to the project's live page."><i class="portfolio__icon fas fa-external-link-square-alt"></i> Live Project</a></li>
@@ -180,26 +183,35 @@
         <div class="wrapper">
             <h2 class="contact__heading">Contact</h2>
             <div class="contact__container">
-                <div class="contact__subcontainer">
-                    <form class="contact__form" id="contact__form" action="https://formspree.io/xknowaya" method="POST" autocomplete="off">
-                        <label class="form__label" for="name"></label>
-                        <input class="form__input" type="text" name="name" id="name" placeholder="Name" required>
-                        <label class="form__label" for="email"></label>
-                        <input class="form__input" type="email" name="email" id="email" placeholder="Email Address" required>
-                        <label class="form__label" for="message"></label>
-                        <textarea class="form__textarea" name="message" id="message" cols="25" rows="10" placeholder="Your Message" required></textarea>
-                        <input type="submit" class="form__button" value="Submit" aria-label="this will submit the completed form">
-                        <div class="contact__form__status--whitespace">
-                            <p class="contact__form__status" id="contact__form__status"></p>
-                        </div>
-                    </form>
+                <!-- <div class="contact__subcontainer"> -->
+                <form class="contact__form" id="contact__form" action="https://formspree.io/xknowaya" method="POST" autocomplete="off">
+                    <label class="form__label" for="name"></label>
+                    <input class="form__input" type="text" name="name" id="name" placeholder="Name" required>
+                    <label class="form__label" for="email"></label>
+                    <input class="form__input" type="email" name="email" id="email" placeholder="Email Address" required>
+                    <label class="form__label" for="message"></label>
+                    <textarea class="form__textarea" name="message" id="message" cols="25" rows="10" placeholder="Your Message" required></textarea>
+                    <input type="submit" class="form__button" value="Submit" aria-label="this will submit the completed form">
+                </form>
+                <div class="contact__form__status--whitespace">
+                    <p class="contact__form__status" id="contact__form__status"></p>
                 </div>
+                <p class="footer__email">Contact me directly : <a href="mailto:seki.teruhisa@gmail.com" class="social__item">seki.teruhisa@gmail.com</a></p>
+                <!-- </div> -->
             </div>
         </div>
     </section>
     <!-- Footer Section -->
     <footer class="footer">
         <div class="wrapper">
+            <div class="mobileShow">
+                <ul class="footer__social">
+                    <!-- change icons to SVGs, as adblockers will block view -->
+                    <li class="social__item"><a class="social__link" aria-label="This link will open a new tab which directs you to Steve Seki's GitHub page." href="https://github.com/tseki88" target="blank"><i class="social__icon fab fa-github"></i></a></li>
+                    <li class="social__item"><a class="social__link" aria-label="This link will open a new tab which directs you to Steve Seki's twitter page." href="https://twitter.com/steve_seki" target="blank"><i class="social__icon fab fa-twitter"></i></a></li>
+                    <li class="social__item"><a class="social__link" aria-label="This link will open a new tab which directs you to Steve Seki's linkedIn page." href="https://www.linkedin.com/in/sekisteve/" target="blank"><i class="social__icon fab fa-linkedin"></i></a></li>
+                </ul>
+            </div>
             <p class="footer__copy"><small>Teruhisa Steve Seki &copy; 2020</small></p>
         </div>
     </footer>

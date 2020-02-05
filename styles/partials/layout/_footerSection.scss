@@ -1,12 +1,25 @@
 .footer {
     margin: 0;
-    padding: 32px 0;
-    // background-color: #8C4736;
-    background-color: rgba($color: $colorTobiiro, $alpha: 0.9);
+    padding: 30px 0;
+    border-top: 5px solid $colorAkabeni;
+    background-color: rgba($color: $colorBlack, $alpha: 0.9);
     
+    &__social {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .social__link {
+        color: $colorWhite;
+    }
+
+    &__email {
+        text-align: center;
+    }
+
+
     &__copy {
-        // text-shadow: 0px 0px 5px $colorTobiiro;
-        color: white;
+        color: $colorWhite;
         margin: 0;
     }
 }

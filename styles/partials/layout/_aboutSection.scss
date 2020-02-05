@@ -1,121 +1,166 @@
 .about {
     padding: 3rem 0;
-    // background-image: url(../assets/bedge_grunge.png);
-    // box-shadow: 0 0 30px 20px rgba(0,0,0,.2);
 
     &__image {
-        margin: 0 auto;
-        width: 350px;
-        height: 400px;
-        box-shadow: 0 0 10px 3px rgba($color: $colorTobiiro, $alpha: 0.8);
+        align-self: flex-start;
+        margin: 0 auto 0 0;
+        max-width: 300px;
+        height: 360px;
         overflow: hidden;
+        border-radius: 10px;
 
-        @include respond-to("tiny") {
+        @include respond-to("large") {
             width: 250px;
             height: 250px;
             border-radius: 50%;
+        }
+
+        @include respond-to("small") {
+            width: 200px;
+            height: 200px;
         }
     }
     
     &__photo {
         width: 100%;
         transform: scale(1.1);
-
-        @include respond-to("tiny") {
-            transform: scale(1.3);
-        }
     }
 
     &__section {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        align-items: center;
 
-        @include respond-to("medium") {
+        @include respond-to("large") {
             flex-direction: column;
         }
     }
 
     &__heading {
-        flex: 0 1 100%;
-        // margin-top: 0;
+        width: 100%;
     }
 
     &__subheading {
-        color: $colorTobiiro;
-        margin: 0 auto 30px;
-        letter-spacing: 20px;
+        color: $colorBlack;
+        margin: 1rem auto 10px;
         text-decoration: underline;
     }
 
-    &__textContainer {
-        padding: 1.8rem 0;
+    &__text {
+        margin-top: 0;
     }
 
     &__container {
+        margin-top: 40px;
+
+        &--photo {
+            flex-basis: 35%;
+
+            @include respond-to("large") {
+                flex-basis: 30%;
+            }
+        }
+
         &--text {
-            flex-basis: 50%;
+            flex-basis: 60%;
 
-            @include respond-to("medium") {
+            @include respond-to("large") {
+                padding-top: 1rem;
                 width: 80%;
-                margin: 0 auto;
-                text-align: center;
-                padding-bottom: 50px;
             }
         }
 
-        &--skills {
-            flex-basis: 40%;
-            max-width: 500px;
-            min-width: 400px;
-            // background-image: url(../assets/ricepaper.png);
-            // box-shadow: 0 0 30px 20px rgba(0,0,0,.2);
-            padding: 3rem 2rem;
-            align-self: flex-start;
-
-            @include respond-to("medium") {
-                margin: 3rem auto 0;
-            }
-
-            @include respond-to("small") {
-                margin: 0 auto;
-            }
-
-            @include respond-to("tiny") {
-                min-width: unset;
-                padding: 1rem 1.2rem;
-            }
+        @include respond-to("small") {
+            margin-top: 10px;
+            padding-top: 0.5rem;
         }
+    }
+
+    &__toolkit {
+        width: 100%;
+        margin-top: 4rem;
+
+        @include respond-to("small") {
+            margin-top: 1rem;
+        }
+    }
+}
+
+.category {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 2rem;
+
+        @media (max-width: 930px) {
+            flex-direction: column;
+        }
+    }
+    
+    &__item {
+        flex: 1 0 40%;
+        margin-bottom: 20px;
+        // display: flex;
+        // align-items: center;
+        // width: 35%;
     }
 }
 
 .skill {
     &__heading {
-        margin: 0.8rem 0;
-        padding-top: 0.8rem;
+        margin: 30px 5px 20px 0;
+        // margin-right: 5px;
         text-align: center;
+        text-decoration: underline;
+        
+        @media (max-width: 930px) {
+            margin-top: 10px;
+        }
     }
 
     &__list {
         display: flex;
-        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        &::before {
+            content: "[ ";
+            margin-right: 10px;
+        }
+
+        &::after {
+            content: " ]";
+        }
+
+        &::before,
+        &::after {
+            color: $colorAkabeni;
+            font-size: 1.8rem;
+        }
     }
     
     &__item {
-        margin: 0 auto;
-        text-align: center;
+        padding-right: 8px;
+        margin: 0 10px;
 
-        &:hover {
-            .skill__icon {
-                text-shadow: 0px 0px 2px $colorWhite;
+        &::after {
+            content: " , ";
+            
+        }
+        
+        &:last-of-type {
+
+            // padding-right: 5px;
+
+            &::after {
+                content: "";
             }
         }
     }
     
     &__icon {
-        // color: $colorAkabeni;
-        color: $colorTobiiro;
-        // text-shadow: 0px 0px 1px $colorAkabeni;
         transition: all 1s;
     }
 }

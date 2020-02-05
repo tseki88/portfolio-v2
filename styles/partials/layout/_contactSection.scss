@@ -1,78 +1,35 @@
 .contact {
     padding: 3rem 0;
-    // background-image: url(../assets/ricepaper.png);
-    // background-repeat: repeat;
 
-    @include respond-to("tiny") {
+    @include respond-to("small") {
         padding-top: 0;
     }
 
-    &__container {
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: center;
-
-        @include respond-to("medium") {
-            justify-content: center;
-        }
-    }
-
-    &__subcontainer {
-        position: relative;
-        flex: 0 1 80%;
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: flex-end;
-        padding: 25px;
-
-        @include respond-to("medium") {
-            flex-direction: column-reverse;
-            flex: 1 1 100%;
-            max-width: 100%;
-        }
-        
-        @include respond-to("tiny") {
-            width: 100%;
-            padding: 0;
-        }
-    }
-    
     &__form {
-        flex: 0 1 85%;
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
         margin: 0 auto;
-        padding: 2rem 2rem 0;
-        // background-image: url(../assets/bedge_grunge.png);
-        // box-shadow: 0 0 3px 3px rgba(0,0,0,.25);
-        // border: 2px solid black;
-        border-radius: 2px;
-        z-index: 3;
+        padding: 5rem 0 4rem;
+        border-radius: 5px;
 
         &__status {
             display: none;
             text-align: center;
-            margin-bottom: 0;
-            border-bottom: 3px dashed $colorAkabeni;
+            text-decoration: double underline;
+            color: $colorAkabeni;
+            margin: 0 auto;
 
             &--whitespace {
-                min-height: 90px;
+                min-height: 40px;
             }
         }
-
+        
         @include respond-to("medium") {
-            padding: 2rem;
-            margin-left: auto;
-            margin-right: auto;
-            width: 100%;
+            padding: 4rem 0 2rem;
         }
-        
+
         @include respond-to("small") {
-            justify-content: space-between;
-            margin: 0 auto;
-        }
-        
-        @include respond-to("tiny") {
             padding: 2rem 1rem 0;
         }
     }
@@ -80,14 +37,26 @@
 
 
 .form {
+    
+    &__input {
+        width: 48%;
+      // flex: 1 1 50%;
+    }
+
+    &__textarea {
+        width: 98%;
+        margin: 0 auto;
+    }
+
     &__input,
     &__textarea {
         background: none;
         margin-bottom: 3px;
         padding: 10px 15px;
         border: none;
-        border-bottom: 1px dashed $colorTobiiro;
+        border-bottom: 1px solid $colorBlack;
         color: $colorKurotobi;
+        resize: none;
 
         &::placeholder {
             color: $colorBlack;
@@ -95,27 +64,26 @@
         }
 
         &:focus {
-            outline: 3px solid rgba($color: $colorAkabeni, $alpha: 0.6);
+            outline: 2px solid rgba($color: $colorAkabeni, $alpha: 0.6);
         }
     }
 
     &__button {
+        width: 98%;
         border: none;
-        margin-top: 20px;
-        background-color: $colorOtan;
+        margin: 20px auto 0;
+        background-color: $colorGrey;
         color: $colorWhite;
-        // text-shadow: 0px 0px 1px $colorWhite;
-        border-radius: 10px;
-        box-shadow: 0px 0px 2px 2px $colorOtan;
+        border-radius: 5px;
         transition: all 0.6s;
+        border: 3px solid transparent;
 
         &:hover,
         &:focus {
             outline: none;
-            background-color: $colorShojohi;
-            color: $colorKurotobi;
-            // text-shadow: 0px 0px 2px $colorTobiiro;
-            // box-shadow: 0px 0px 2px 2px $colorShojohi;
+            background-color: $colorKurotobi;
+            border: 3px solid $colorAkabeni;
+            transform: scale(1.02);
         }
     }
 }

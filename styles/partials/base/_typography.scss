@@ -1,20 +1,19 @@
-@font-face {
-    font-family: 'gillsans_lightregular';
-    src: url('../font/gillsans-light-webfont.woff2') format('woff2'),
-    url('../font/gillsans-light-webfont.woff') format('woff'),
-    url('../font/ufonts.com_gillsans-light.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,600%7CRoboto+Slab:300,400,600");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500%7CRoboto+Slab:400,600");
 
 
 html,
 body,
 input {
     font-size: 20px;
-    // font-family: 'gillsans_lightregular', sans-serif;
     font-family: "Roboto", sans-serif;
+
+    @include respond-to("large") {
+        font-size: 18px;
+    }
+
+    @include respond-to("medium") {
+        font-size: 16px;
+    }
 }
 
 h1,
@@ -22,50 +21,39 @@ h2,
 h3,
 h4 {
     font-family: "Roboto Slab", serif;
-    // text-align: center;
 }
 
 h1 {
     font-size: 3rem;
     font-weight: 500;
-    // text-align: center;
     color: $colorKurotobi;
 
     @include respond-to("small") {
-        font-size: 2rem;
-    }
-
-    @include respond-to("tiny") {
-        font-size: 1.6rem;
+        font-size: 2.6rem;
     }
 }
 
 h2 {
-    color: $colorTobiiro;
     font-size: 1.8rem;
-    letter-spacing: 0px;
     line-height: 70px;
-    text-transform: uppercase;
     text-align: center;
-    text-shadow: 0px 0px 1px $colorShuiro;
 
     &::before {
+        color: $colorAkabeni;
+        margin-right: 5px;
         content: "<  ";
     }
 
     &::after {
+        color: $colorAkabeni;
+        margin-left: 5px;
         content: "  >";
-    }
-
-    @include respond-to("tiny") {
-        font-size: 1.6rem;
     }
 }
 
 h3 {
     letter-spacing: 1px;
     line-height: 30px;
-    // font-weight: 800;
 }
 
 h4 {
@@ -82,50 +70,23 @@ h4 {
         font-weight: 500;
         text-transform: none;
         text-align: left;
-
-        @include respond-to("tiny") {
-            font-size: 1.5rem;
-        }
     }
 }
 
 .nav__link {
-    // font-size: 1.2rem;
-    // font-weight: 400;
-    // line-height: 70px;
-    // letter-spacing: 1px;
-
-    @include respond-to("tiny") {
-        font-size: 0.8rem;
-        line-height: 40px;
-    }
+    outline: none;
 }
 
 .about {
     &__subheading {
-        font-size: 2rem;
+        font-size: 1.2rem;
         text-align: center;
-    
-        @include respond-to("tiny") {
-            font-size: 1.8rem;
-        }
     }
 
     &__text {
-        // font-size: 1.2rem;
-        // font-weight: 600;
+        font-size: 1.1rem;
         line-height: 28px;
-
-        @include respond-to("tiny") {
-            font-size: 1rem;
-        }
-    }
-
-    &__text--accent {
-        
-        padding-top: 1rem;
-        font-size: 2rem;
-        text-align: center;
+        letter-spacing: 0.5px;
     }
 }
 
@@ -135,23 +96,9 @@ h4 {
         text-align: left;
         text-transform: capitalize;
         padding-bottom: 0.5rem;
-
-        @include respond-to("tiny") {
-            font-size: 2rem;
-        }
-    }
-
-    &__description {
-        // font-size: 1.1rem;
-        line-height: 1.4rem;
-
-        @include respond-to("tiny") {
-            font-size: 0.9rem;
-        }
     }
 
     &__link {
-        // font-size: 1.6rem;
         line-height: 40px;
     }
 
@@ -162,11 +109,12 @@ h4 {
 
 .skill {
     &__heading {
-        font-size: 1.4rem;
+        // font-size: 1.1rem;
+        letter-spacing: 1px;
     }
 
     &__icon {
-        font-size: 2.6rem;
+        font-size: 1.8rem;
     }
 }
 
@@ -189,23 +137,33 @@ h4 {
 .form {
     &__input,
     &__textarea {
-        font-weight: 500;
-        // letter-spacing: 2px;
+        font-family: inherit;
+        
+        &::placeholder {
+            text-transform: uppercase;
+        }
     }
 }
 
+.contact {
+    font-family: "Roboto Slab", serif;
+}
+
 .contact__form__status {   
+    font-family: inherit;
+    font-size: 1.4rem;
     text-align: center;
-    font-size: 2rem;
 }
 
 .form__button {
-    font-size: 1.6rem;
-    // letter-spacing: 2px;
+    font-family: inherit;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    text-transform: uppercase;
 }
 
 .footer__copy {
     font-family: "Roboto Slab", serif;
-    text-align: center;
     font-size: 1.2rem;
+    text-align: center;
 }
