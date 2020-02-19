@@ -31,8 +31,9 @@
     }
 }
 
-.social {
+.stuff {
     &__fixed {
+        -webkit-transform: translateZ(0);
         width: 40px;
         position: fixed;
         bottom: 0;
@@ -52,10 +53,6 @@
             left: auto;
         }
     }
-}
-
-
-.social {
 
     &__container {
         display: flex;
@@ -109,7 +106,7 @@
                 color: $colorAkabeni;
                 outline: none;
                 
-                .social__icon {
+                .stuff__icon {
                     color: $colorAkabeni;
                 }
     
@@ -154,7 +151,7 @@
         &:focus,
         &:hover {
             
-            .social__icon {
+            .stuff__icon {
                 color: $colorAkabeni;
             }
 

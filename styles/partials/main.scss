@@ -1,7 +1,7 @@
 @import
   'abstracts/setup',
-  'abstracts/mixins',
-  'abstracts/animate';
+  'abstracts/animate',
+  'abstracts/mixins';
 
 @import
   'base/colors',
@@ -9,8 +9,8 @@
   'base/base';
 
 @import
-  'layout/headerSection',
   'layout/nav',
+  'layout/headerSection',
   'layout/aboutSection',
   'layout/portfolioSection',
   'layout/contactSection',

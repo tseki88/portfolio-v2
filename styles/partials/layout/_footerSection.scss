@@ -4,12 +4,12 @@
     border-top: 5px solid $colorAkabeni;
     background-color: rgba($color: $colorBlack, $alpha: 0.9);
     
-    &__social {
+    &__stuff {
         display: flex;
         justify-content: center;
     }
     
-    .social__link {
+    .stuff__link {
         color: $colorWhite;
     }
 
