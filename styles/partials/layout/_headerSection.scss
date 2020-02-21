@@ -14,7 +14,7 @@
         }
 
         &__main {
-            margin: 0 auto;
+            margin: 2rem auto 0;
 
             span {
                 @include respond-to("small") {

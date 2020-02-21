@@ -3060,7 +3060,7 @@ a {
       .header__heading__container {
         padding: 0 20px; } }
   .header__heading__main {
-    margin: 0 auto; }
+    margin: 2rem auto 0; }
     @media (max-width: 540px) {
       .header__heading__main span {
         display: block;
