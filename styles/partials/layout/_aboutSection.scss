@@ -157,3 +157,25 @@
         transition: all 1s;
     }
 }
+
+.devicon {
+    &-jquery-plain {
+        color: #21609b
+    }
+
+    &-sass-original {
+        color: #cd6799
+    }
+
+    &-html5-plain {
+        color: #e44d26
+    }
+    
+    &-css3-plain {
+        color: #264de4;
+    }
+    &-react-original {
+        color: #00d8ff
+    }
+}
+
