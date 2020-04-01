@@ -16,7 +16,6 @@ input {
     }
 }
 
-h1,
 h2,
 h3,
 h4 {
@@ -24,7 +23,7 @@ h4 {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 500;
     color: $colorKurotobi;
 
@@ -34,7 +33,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     line-height: 70px;
     text-align: center;
 
@@ -61,9 +60,6 @@ h4 {
 }
 
 .header__heading {
-    &__main {
-        font-weight: 600;
-    }
 
     &__sub {
         font-size: 1.4rem;
@@ -88,10 +84,16 @@ h4 {
     }
 
     &__text {
-        font-size: 1.1rem;
+        font-size: 1rem;
         line-height: 28px;
         letter-spacing: 0.5px;
+        font-weight: 500;
     }
+}
+
+.bold {
+    font-weight: 600;
+    color: $colorAkabeni;
 }
 
 .portfolio {
