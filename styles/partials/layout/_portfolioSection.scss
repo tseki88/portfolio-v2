@@ -1,6 +1,9 @@
 .portfolio {
     position: relative;
-    padding: 3rem 0 0;
+    z-index: 3;
+    padding: 2rem 0 0;
+    background-image: url(../assets/cross_scratches.png);
+    box-shadow: 0px 1px 10px 0px $colorBlack;
 
     &__title {
         margin: 0 0 15px;
@@ -16,14 +19,10 @@
         &:nth-of-type(2n + 1) {
             flex-direction: row-reverse;
             
-            @include respond-to("large") {
+            @include respond-to("small") {
                 flex-direction: column-reverse;
                 align-items: center;
-                padding: 3rem 0;
-            }
-
-            @include respond-to("small") {
-                padding: 3rem 1rem;
+                padding: 1rem;
             }
 
             .portfolio__screenshot {
@@ -34,7 +33,7 @@
                 left: unset;
                 right: -15%;
 
-                @include respond-to("large") {
+                @include respond-to("small") {
                     left: 0;
                     right: none;
                     transform: translate(-50%, 0%);
@@ -42,34 +41,26 @@
             }
         }
 
-        @include respond-to("large") {
+        @include respond-to("small") {
             flex-direction: column-reverse;
             align-items: center;
-            padding: 3rem 0;
-        }
-
-        @include respond-to("small") {
             margin-bottom: 20px;
-            padding: 3rem 1rem;
+            padding: 1rem;
         }
     }
     
     &__text {
         width: 50%;
         
-        @include respond-to("large") {
-            width: 80%;
-            margin-top: 1rem;
-        }
-
         @include respond-to("small") {
+            margin-top: 1rem;
             width: 100%;
         }
     }
 
     &__description {
-        line-height: 35px;
-        margin: 20px 0;
+        line-height: 25px;
+        margin: 1rem 0;
     }
 
     &__redirect {
@@ -93,13 +84,9 @@
         width: 35%;
         overflow: visible;
 
-        @include respond-to("large") {
-            width: 60%;
-            margin-bottom: 2rem;
-            flex-direction: row-reverse;
-        }
-
         @include respond-to("small") {
+            width: 60%;
+            flex-direction: row-reverse;
             margin-bottom: 20px;
         }
     }
@@ -108,7 +95,7 @@
         display: flex;
         flex-wrap: wrap;
 
-        @include respond-to("large") {
+        @include respond-to("small") {
             padding-top: 10px;
         }
     }
@@ -118,10 +105,10 @@
         color: rgba($color: $colorBlack, $alpha: 0.9);
         padding: 0 10px;
         margin-right: 20px;
-        border-radius: 2px;
+        border-radius: 5px;
         border: 1px solid $colorBlack;
         text-align: center;
-        transition: all 0.8s;
+        transition: all 0.6s ease;
 
         &:hover,
         &:focus-within {
@@ -133,11 +120,6 @@
 
     &__link {
         color: inherit;
-        outline: none;
-    }
-
-    &__icon {
-        height: 32px;   
     }
 
     @include respond-to("small") {
@@ -152,8 +134,8 @@
         font-weight: 500;
         padding: 0 8px;
         margin: 0 6px 6px 0;
-        height: 28px;
-        line-height: 28px;
+        height: 25px;
+        line-height: 25px;
         border-radius: 2px;
         text-align: center;
     }

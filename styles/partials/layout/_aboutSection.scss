@@ -1,5 +1,13 @@
 .about {
-    padding: 3rem 0;
+    position: relative;
+    z-index: 4;
+    padding: 2rem 0 5rem;
+    background-image: url(../assets/dust_scratches.png);
+    box-shadow: 0px 1px 10px 0px black;
+
+    @include respond-to("small") {
+        padding: 3rem 0 2rem;
+    }
 
     &__image {
         align-self: flex-start;
@@ -8,7 +16,7 @@
         height: 360px;
         overflow: hidden;
         border-radius: 8px;
-        box-shadow: 0px 0px 5px 1px $colorBlack;
+        box-shadow: 0px 1px 5px 0px $colorBlack;
 
         @include respond-to("large") {
             width: 250px;
@@ -50,6 +58,13 @@
 
     &__text {
         margin-top: 0;
+        margin-bottom: 0.5rem;
+
+        @include respond-to("small") {
+            margin-top: 0.6rem;
+            margin-bottom: 0.6rem;
+            line-height: 1.2rem;
+        }
     }
 
     &__container {
@@ -57,30 +72,30 @@
 
         &--photo {
             flex-basis: 30%;
-
-            @include respond-to("large") {
-                flex-basis: 30%;
-            }
         }
 
         &--text {
-            flex-basis: 70%;
+            flex-basis: 65%;
+            background-image: url(../assets/cross_scratches.png);
+            box-shadow: 0px 1px 5px 0px $colorBlack;
+            border-radius: 8px;
+            padding: 1rem 2rem;
 
             @include respond-to("large") {
                 padding-top: 1rem;
-                width: 100%;
+                width: 95%;
             }
         }
 
         @include respond-to("small") {
-            margin-top: 10px;
+            margin-top: 2rem;
             padding: 0.5rem 1rem;
         }
     }
 
     &__toolkit {
         width: 100%;
-        margin-top: 4rem;
+        margin: 4rem auto;
 
         @include respond-to("small") {
             margin-top: 1rem;
@@ -129,6 +144,7 @@
 
         &::after {
             content: " ]";
+            margin-left: 10px;
         }
 
         &::before,
@@ -140,7 +156,6 @@
     
     &__item {
         position: relative;
-        padding-right: 8px;
         margin: 0 10px;
 
         &::after {
@@ -152,6 +167,10 @@
             &::after {
                 content: "";
             }
+
+            .skill__title {
+                left: 50%;
+            }
         }
 
         &:hover {
@@ -160,7 +179,7 @@
                 transform: scaleY(1) translateX(-50%);
                 transition: all 0.3s ease-out;
             }
-        } 
+        }
     }
 
     &__icon {

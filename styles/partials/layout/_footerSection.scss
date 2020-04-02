@@ -1,12 +1,17 @@
 .footer {
     margin: 0;
-    padding: 20px 0;
-    border-top: 5px solid $colorAkabeni;
+    padding: 15px 0;
+    border-top: 3px solid $colorAkabeni;
     background-color: rgba($color: $colorBlack, $alpha: 0.9);
     
     &__stuff {
         display: flex;
         justify-content: center;
+
+        .stuff__icon {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
     }
     
     .stuff__link {

@@ -1,17 +1,19 @@
 .contact {
-    padding: 3rem 0;
+    padding: 2rem 0;
 
     @include respond-to("small") {
-        padding-top: 0;
+        padding-top: 3rem;
     }
 
     &__form {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        margin: 0 auto;
-        padding: 5rem 0 4rem;
-        border-radius: 5px;
+        margin: 50px auto 0;
+        padding: 3rem;
+        border-radius: 8px;
+        box-shadow: 0px 0px 5px 1px $colorGrey;
+        background-image: url(../assets/cross_scratches.png);
 
         &__status {
             display: none;
@@ -26,11 +28,13 @@
         }
         
         @include respond-to("medium") {
-            padding: 4rem 0 2rem;
+            padding: 2rem;
         }
 
         @include respond-to("small") {
-            padding: 2rem 1rem 0;
+            width: 95%;
+            margin-top: 2rem;
+            padding: 2rem 1rem;
         }
     }
 }
@@ -57,14 +61,15 @@
         background: none;
         margin-bottom: 3px;
         padding: 10px 15px;
+        background-image: url(../assets/dust_scratches.png);
+        box-shadow: 0px 1px 2px 0px $colorGrey;
         border: none;
-        border-bottom: 1px solid $colorBlack;
         color: $colorKurotobi;
         resize: none;
 
         &::placeholder {
             color: $colorBlack;
-            font-weight: 600;
+            font-weight: 500;
         }
 
         &:focus {
@@ -74,20 +79,21 @@
 
     &__button {
         width: 98%;
-        border: none;
-        margin: 20px auto 0;
-        background-color: $colorGrey;
+        margin: 30px auto 0;
+        padding: 0 30px;
         color: $colorWhite;
-        border-radius: 5px;
-        transition: all 0.6s;
-        border: 3px solid transparent;
+        letter-spacing: 1px;
+        background-color: $colorGrey;
+        border-radius: 3px;
+        transition: all 0.5s ease;
+        border: none;
+        box-shadow: 0px 1px 3px 1px $colorGrey;
 
         &:hover,
         &:focus {
-            outline: none;
-            background-color: $colorKurotobi;
-            border: 3px solid $colorAkabeni;
-            transform: scale(1.02);
+            background-color: $colorAkabeni;
+            color: $colorWhite;
+            cursor: pointer;
         }
     }
 }

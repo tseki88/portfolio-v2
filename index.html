@@ -62,16 +62,16 @@
                         Hi there! I'm Steve, a Front-End Developer based in Toronto. 
                     </p>
                     <p class="about__text">
-                        Prior to programming, I come from a background in operations management working for head office of a national coffee chain. Double-Double anyone? (I actually drink my coffee black..<span class="iconify" data-icon="ls:coffee" data-inline="false"></span>)
-                    </p>
-                    <p class="about__text">
-                        In 2019, I made the decision to switch careers into the tech industry and haven't looked back.
+                        Back in 2019, I made the decision to switch careers into the tech industry and haven't looked back!
                     </p>
                     <p class="about__text">
                         I completed the Web Development Immersive program at Juno College (formerly HackerYou) in January 2020, with a focus in Front-End Development and <span class="bold">currently seeking opportunities!</span>
                     </p> 
                     <p class="about__text">
-                        Between Board Game and Bouldering sessions, I am continuously learning to strengthen CS fundamentals and relevant technologies.
+                        Prior to programming I come from a background in operations management, working with franchisees and business partners of a national coffee chain. Double-Double anyone? (I actually drink my coffee black..<span class="iconify" data-icon="ls:coffee" data-inline="false"></span>)
+                    </p>
+                    <p class="about__text">
+                        Between Board Games and Bouldering sessions, I am continuously learning to strengthen CS fundamentals and relevant technologies.
                     </p>
                 </div>
             </div>
@@ -183,9 +183,10 @@
                         <ul class="language__container">
                             <li class="language__item">React</li>
                             <li class="language__item">Semantic UI</li>
-                            <li class="language__item">Firebase</li>
+                            <!-- Currently disabled Firebase, working to integrate it back in with User Auth / Redux -->
+                            <!-- <li class="language__item">Firebase</li> -->
                         </ul>
-                        <p class="portfolio__description">Built using React Hooks, and SemanticUI for  An all in one board game tool kit based on you and your friends' needs. Stay tuned for more additions to come!</p>
+                        <p class="portfolio__description">Built using React Hooks, and SemanticUI. An all in one board game tool kit based on you and your friends' needs. Stay tuned for more additions to come!</p>
                         <ul class="portfolio__linkContainer">
                             <li class="portfolio__button"><a class="portfolio__link" href="https://github.com/tseki88/steveSekiProjectFive" target="blank" aria-label="This link will open a new tab which directs you to the project's github repository page."><i class="portfolio__icon fab fa-github"></i> GitHub</a></li>
                             <li class="portfolio__button"><a class="portfolio__link" href="https://tseki88.github.io/steveSekiProjectFive" target="blank" aria-label="This link will open a new tab which directs you to the project's live page."><i class="portfolio__icon fas fa-external-link-square-alt"></i> Live Project</a></li>
@@ -283,17 +284,16 @@
             <div class="contact__container">
                 <form class="contact__form" id="contact__form" action="https://formspree.io/xknowaya" method="POST" autocomplete="off">
                     <label class="form__label" for="name"></label>
-                    <input class="form__input" type="text" name="name" id="name" placeholder="Name" required>
+                    <input class="form__input" type="text" name="name" id="name" placeholder="Your Name" required>
                     <label class="form__label" for="email"></label>
-                    <input class="form__input" type="email" name="email" id="email" placeholder="Email Address" required>
+                    <input class="form__input" type="email" name="email" id="email" placeholder="Contact Email Address" required>
                     <label class="form__label" for="message"></label>
-                    <textarea class="form__textarea" name="message" id="message" cols="25" rows="10" placeholder="Your Message" required></textarea>
-                    <input type="submit" class="form__button" value="Submit" aria-label="this will submit the completed form">
+                    <textarea class="form__textarea" name="message" id="message" cols="25" rows="10" placeholder="e.g.  - Hi Steve, I would love to connect with you over coffee :)" required></textarea>
+                    <input type="submit" class="form__button" value="Send Message" aria-label="this will submit the completed form">
                 </form>
                 <div class="contact__form__status--whitespace">
                     <p class="contact__form__status" id="contact__form__status"></p>
                 </div>
-                <p class="footer__email">Contact me directly : <a href="mailto:steveseki88@gmail.com" class="stuff__item">steveseki88@gmail.com</a></p>
             </div>
         </div>
     </section>

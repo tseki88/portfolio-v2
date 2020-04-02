@@ -4,7 +4,7 @@
     justify-content: flex-end;
     width: 100%;
     padding: 0 50px;
-    height: 65px;
+    height: 55px;
     border-bottom: 3px solid $colorAkabeni;
     position: fixed;
     z-index: 10;
@@ -43,15 +43,13 @@
     &__link {
         position: relative;
         color: $colorWhite;
-        font-weight: 500;
-        text-transform: uppercase;
 
         &::after {
             content: " ";
             position: absolute;
             transform: scaleX(0);
-            transition: all 1s;
-            border-bottom: 2px solid transparent;
+            transition: all 0.6s;
+            border-bottom: 1px solid transparent;
             left: 0;
             right: 0;
             bottom: -1px;
@@ -62,10 +60,14 @@
             color: $colorAkabeni;
             
             &::after {
-                border-bottom: 2px solid $colorWhite;
+                border-bottom: 1px solid $colorWhite;
                 transform: scaleX(1);
                 bottom: -1px;
             }
+        }
+
+        &:focus {
+            outline: 1px dotted white;
         }
     }
 }

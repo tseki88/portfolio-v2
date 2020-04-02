@@ -1,6 +1,9 @@
 .header {
     position: relative;
+    z-index: 5;
     height: 100vh;
+    background-image: url(../assets/dust_scratches.png);
+    box-shadow: 0px 1px 10px 0px black;
 
     &__heading {
         &__container {
@@ -19,14 +22,12 @@
 
         &__wrapper {
             text-align: center;
-            background-color: rgba($color: $colorWhite, $alpha: 0.7);
-            box-shadow: 0px 0px 10px 10px rgba($color: $colorWhite, $alpha: 0.7);
         }
 
         &__main {
             text-align: center;
             margin: 2rem auto 0;
-            text-shadow: 4px 0 2px white, -4px 0 2px white, 0 4px 2px white, 0 -4px 2px white;
+            text-shadow: 4px 0 2px rgba($color: $colorWhite, $alpha: 0.7), -4px 0 2px rgba($color: $colorWhite, $alpha: 0.7), 0 4px 2px rgba($color: $colorWhite, $alpha: 0.7), 0 -4px 2px rgba($color: $colorWhite, $alpha: 0.7);
 
             span {
                 @include respond-to("small") {
@@ -40,7 +41,7 @@
         &__sub {
             text-align: center;
             margin-top: 0;
-            text-shadow: 4px 0 2px white, -4px 0 2px white, 0 4px 2px white, 0 -4px 2px white;
+            text-shadow: 4px 0 2px rgba($color: $colorWhite, $alpha: 0.7), -4px 0 2px rgba($color: $colorWhite, $alpha: 0.7), 0 4px 2px rgba($color: $colorWhite, $alpha: 0.7), 0 -4px 2px rgba($color: $colorWhite, $alpha: 0.7);
         }
     }
 }
@@ -63,11 +64,19 @@
         &--left {
             left: 40px;
             right: auto;
+
+            @include respond-to("large") {
+                left: 30px;
+            }
         }
 
         &--right {
             right: 40px;
             left: auto;
+
+            @include respond-to("large") {
+                right: 30px;
+            }
         }
     }
 
@@ -121,7 +130,6 @@
             &:focus,
             &:hover {
                 color: $colorAkabeni;
-                outline: none;
                 
                 .stuff__icon {
                     color: $colorAkabeni;
@@ -141,10 +149,6 @@
         color: $colorKurotobi;
         display: flex;
         align-items: center;
-
-        &:focus {
-            outline: none;
-        }
 
         &::before {
             content: "[";
